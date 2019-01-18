@@ -257,6 +257,7 @@ $(document).ready(function () {
             var googleLink = "https://www.google.com/maps/search/?api=1&query=" + place.ADDRESS + ',' + place.COMMUNITY;
             $('#Left-Top-Panel').hide();
             $('#Left-Bottom-Panel').empty();
+            $('#Left-Bottom-Panel').show();
             $('#Left-Bottom-Panel').append('<h4>' + place.NAME + '</h4>');
             $('#Left-Bottom-Panel').append('<p><i>' + place.DENOMINATION + '</i><p>');
             $('#Left-Bottom-Panel').append('<p>' + address + '<p>');
@@ -298,6 +299,8 @@ $(document).ready(function () {
                     return string.charAt(0).toUpperCase() + string.substr(1).toLowerCase();
                 });
     }
+ 
+   $('#Left-Bottom-Panel').hide();
     //The RenderMap function is called.
     RenderMap();
     
