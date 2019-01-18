@@ -282,6 +282,7 @@ $(document).ready(function () {
      * @returns {None} 
      */
     function ReturnToLocater() {
+        $('#Left-Bottom-Panel').hide();
         $('#Left-Bottom-Panel').empty();
         $('#Left-Top-Panel').show();
     }
