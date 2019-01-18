@@ -8,7 +8,7 @@ This application uses open data provided by the city of Hamilton's open data ini
 The project orignally started as a final project for a HTML5 course at Mohawk College. 
 I have recently come back to it to update the data and make it available via GitHub
 
-                     Tech Used
+                     #Tech Used
 -----------------------------------------------
 -HTML5
 -CSS/BootStrap
@@ -16,7 +16,7 @@ I have recently come back to it to update the data and make it available via Git
 -Google maps API
 -Open Data From http://open.hamilton.ca/
 
-License
+#License
 -----------------------------------------------
  MIT License
  
