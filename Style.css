@@ -26,7 +26,7 @@ h1{
     margin: 0;
 }
 
-html, body, .row, .container-fluid {
+html, body, .row, .container-fluid, .col-sm-8 {
 
     height: 100%;
     margin: 0;
