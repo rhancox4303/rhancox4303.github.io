@@ -1,0 +1,15 @@
+    Name:       Riley Hancox
+    Student ID: 000397119
+    Project:    Hamilton Places of Worship -Release
+    Course:     COMP 10133
+    Instructor: Kevin Browne
+
+-Altered the places of Worship JSON data this includes:
+	- Removing non-existent Churches
+	- Changing the Latitude and Longitude data to improve accurcary
+	- Changing inaccurate addresses
+        - Updating Places of Worship names.
+
+-Added a Prompt to instruct users to click on markers to get more information.
+
+-Altered the Button size in order to prevent text cutoff
