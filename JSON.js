@@ -1,3425 +1,3918 @@
-
-
-/**
- * The array pow contains the places of worship JSON data
- * 
- * @type Array
- */
 var pow = [
   {
-    "ID": 2,
-    "NAME": "St. Margaret Mary Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "20 IDLEWOOD AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.82827348,
-    "LATITUDE": 43.2240213,
-    "WEBSITE": "https://www.stmargaretmaryparish.ca/"
-  },
-  {
-
-    "ID": 3,
-    "NAME": "Faith Gospel Church",
-    "DENOMINATION": "Associated Gospel Churches",
-    "ADDRESS": "518 COCHRANE RD",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80540239,
-    "LATITUDE": 43.22532812,
-    "WEBSITE": "http://faithgospelchurch.ca/"
-  },
-  {
-    "ID": 4,
-    "NAME": "Rymal Road Community Church",
-    "DENOMINATION": "Free Methodist",
-    "ADDRESS": "1967 RYMAL RD",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.80474038,
-    "LATITUDE": 43.218482,
-    "WEBSITE": "http://rymalroad.org/"
-  },
-  {
-    "ID": 7,
-    "NAME": "New Apostolic Church",
-    "DENOMINATION": "Apostolic",
-    "ADDRESS": "922 UPPER SHERMAN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8537787,
-    "LATITUDE": 43.2186771,
-    "WEBSITE": "http://www.naccanada.org/"
-  },
-  {
-    "ID": 8,
-    "NAME": "Church Of God In Hamilton",
-    "DENOMINATION": "Pentecostal",
-    "ADDRESS": "186 ANNABELLE ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.89518654,
-    "LATITUDE": 43.2141521,
-    "WEBSITE": "http://www.churchofgodhamilton.ca/"
-  },
-  {
-    "ID": 9,
-    "NAME": "Mountain Church Of The Nazarene",
-    "DENOMINATION": "Church of the Nazarene",
-    "ADDRESS": "910 UPPER SHERMAN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.853324,
-    "LATITUDE": 43.2192324,
-    "WEBSITE": "None"
-  },
-  {
-    "ID": 10,
-    "NAME": "Templo Nueva Vida",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "279 GROSVENOR AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.81812207,
-    "LATITUDE": 43.25024891,
-    "WEBSITE": "http://www.templonuevavida.ca/"
-  },
-  {
-    "ID": 11,
-    "NAME": "New Vision United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "24 MAIN ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87052725,
-    "LATITUDE": 43.25588877,
-    "WEBSITE": "http://newvisionunited.org/"
-  },
-  {
-    "ID": 13,
-    "NAME": "Jesus First Assembly (Peoples Church)",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "510 MOHAWK RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90596864,
-    "LATITUDE": 43.23269163,
-    "WEBSITE": "None"
-  },
-  {
-    "ID": 14,
-    "NAME": "Hamilton Korean Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "200 SANFORD AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84320025,
-    "LATITUDE": 43.25812793,
-    "WEBSITE": "None"
-  },
-  {
-
-    "ID": 15,
-    "NAME": "Parkview Church",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "1136 WEST 5TH ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.89591251,
-    "LATITUDE": 43.20851372,
-    "WEBSITE": "http://www.parkviewchurchhamilton.ca/"
-  },
-  {
-
-    "ID": 16,
-    "NAME": "Ridgecrest Southern Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "582 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8410474,
-    "LATITUDE": 43.2574658,
-    "WEBSITE": "http://www.ridgecrestbaptistchurch.net/"
-  },
-  {
-
-    "ID": 17,
-    "NAME": "Canadian Martyrs Catholic Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "38 EMERSON",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.9202806,
-    "LATITUDE": 43.2569814,
-    "WEBSITE": "None"
-  },
-  {
-
-    "ID": 18,
-    "NAME": "Jehovah's Witnesses (Stone Church)",
-    "DENOMINATION": "Jehovah's Witnesses",
-    "ADDRESS": "277 STONE CHURCH RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.902172,
-    "LATITUDE": 43.213944,
-    "WEBSITE": "None"
-  },
-  {
-    "ID": 19,
-    "NAME": "John Calvin Hungarian Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "121 BIRCH AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84080494,
-    "LATITUDE": 43.25668042,
-    "WEBSITE": "None"
-  },
-  {
-    "ID": 20,
-    "NAME": "St. Ann's Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "120 SHERMAN AV N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.836014,
-    "LATITUDE": 43.255942,
-    "WEBSITE": "http://stannhamilton.church/"
-  },
-  {
-
-    "ID": 21,
-    "NAME": "St. Stanislaus Roman Catholic Polish Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "8 ST ANN ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.834980,
-    "LATITUDE": 43.255753,
-    "WEBSITE": "http://www.stankostka.ca/"
-  },
-  {
-
-    "ID": 22,
-    "NAME": "Church Of The Holy Spirit",
-    "DENOMINATION": "Ukranian Catholic",
-    "ADDRESS": "15 ST. OLGA",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83394371,
-    "LATITUDE": 43.25549219,
-    "WEBSITE": "https://holyspirit.hsucc.ca/"
-  },
-  {
-    "ID": 23,
-    "NAME": "West Highland Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "1605 GARTH ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90985062,
-    "LATITUDE": 43.21058301,
-    "WEBSITE": "http://www.westhighland.org/"
-  },
-  {
-    "ID": 24,
-    "NAME": "Eternal Spring United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "99 NORTH OVAL",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90703,
-    "LATITUDE": 43.262085,
-    "WEBSITE": "None"
-  },
-  {
-    "ID": 25,
-    "NAME": "Rehoboth United Reformed Church",
-    "DENOMINATION": "Reformed",
-    "ADDRESS": "77 GLANCASTER RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.926742,
-    "LATITUDE": 43.208741,
-    "WEBSITE": "http://rehobothurc.ca/"
-  },
-  {
-    "ID": 26,
-    "NAME": "Living Hope Christian Assembly",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "1045 GARTH ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.902582,
-    "LATITUDE": 43.227488,
-    "WEBSITE": "http://www.findhope.tv/"
-  },
-  {
-    "ID": 27,
-    "NAME": "Church Of God Of Prophecy",
-    "DENOMINATION": "Other",
-    "ADDRESS": "64 WENTWORTH ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84750493,
-    "LATITUDE": 43.25455524,
-    "WEBSITE": "http://www.cogop.ca/local-churches/hamilton-cogop"
-  },
-  {
-//Valid
-    "ID": 28,
-    "NAME": "Binkley United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "1570 MAIN ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.92752185,
-    "LATITUDE": 43.25779463,
-    "WEBSITE": "http://binkleyunitedchurch.org/"
-  },
-    //Valid
-  {
-    "ID": 30,
-    "NAME": "St. Stephen's Hungarian Roman Catholic Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "130 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86024429,
-    "LATITUDE": 43.26243251,
-    "WEBSITE": "http://ststephenhamilton.church/"
-  },
-  {
-    //Valid
-    "ID": 32,
-    "NAME": "Cumberland Christian Assembly",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "240 CUMBERLAND AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.841558,
-    "LATITUDE": 43.243374,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 33,
-    "NAME": "Little Bethal Community Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "320 PALING AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.79782932,
-    "LATITUDE": 43.24644902,
-    "WEBSITE": "http://www.littlebethel.ca/"
-  },
-  {
-    //Valid
-    "ID": 34,
-    "NAME": "Redeemer Lutheran Church",
-    "DENOMINATION": "Lutheran",
-    "ADDRESS": "15 WEXFORD AVE S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.81277429,
-    "LATITUDE": 43.24051486,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 35,
-    "NAME": "St. Mark's Syrian Orthodox Church",
-    "DENOMINATION": "Orthodox",
-    "ADDRESS": "1202 DUNSMURE RD",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.78927663,
-    "LATITUDE": 43.23719034,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 36,
-    "NAME": "The Apostolic Holiness Church",
-    "DENOMINATION": "Apostolic",
-    "ADDRESS": "185 OTTAWA ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.81791081,
-    "LATITUDE": 43.24781521,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 37,
-    "NAME": "Faith Church Of Jesus Christ",
-    "DENOMINATION": "Church of Jesus Christ",
-    "ADDRESS": "1855 MAIN ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.78976732,
-    "LATITUDE": 43.23603214,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 38,
-    "NAME": "Annunciation Of Our Lord",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "280 LIMERIDGE RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.89793357,
-    "LATITUDE": 43.22369974,
-    "WEBSITE": "http://www.annunciationparish.info/"
-  },
-  {
-    //Valid
-    "ID": 39,
-    "NAME": "Compass Point Bible Church",
-    "DENOMINATION": "Associated Gospel Churches",
-    "ADDRESS": "80 ELLIS AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80978275,
-    "LATITUDE": 43.24911575,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 40,
-    "NAME": "Incarnation Of Our Blessed Lord",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "400 POTTRUFF RD N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.770947,
-    "LATITUDE": 43.238836,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 41,
-    "NAME": "Church Of Jesus Christ Of Latter-Day Saints",
-    "DENOMINATION": "Jesus Christ of Latter-Day Saints",
-    "ADDRESS": "345 HWY 8",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.72752132,
-    "LATITUDE": 43.22009292,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 42,
-    "NAME": "Church Of God 7th Day",
-    "DENOMINATION": "Other",
-    "ADDRESS": "140 HUNTER ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86494193,
-    "LATITUDE": 43.25195683,
-    "WEBSITE": "https://cog7.org/"
-  },
-  {
-    //Valid
-    "ID": 43,
-    "NAME": "Church Of Jesus Christ Of Latter-Day Saints",
-    "DENOMINATION": "Jesus Christ of Latter-Day Saints",
-    "ADDRESS": "701 STONE CHURCH RD E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85850061,
-    "LATITUDE": 43.20391397,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 44,
-    "NAME": "Wesley Urban Ministries Inc.",
-    "DENOMINATION": "Other",
-    "ADDRESS": "195 FERGUSON AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.859146,
-    "LATITUDE": 43.260772,
-    "WEBSITE": "http://wesley.ca/"
-  },
-  {
-    //Valid
-    "ID": 45,
-    "NAME": "Emmanuel United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "871 UPPER OTTAWA ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83331939,
-    "LATITUDE": 43.21420876,
-    "WEBSITE": "https://www.emmanueluc.com/"
-  },
-  {
-    //Valid
-    "ID": 46,
-    "NAME": "Southgate Presbyterian",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "120 CLARENDON",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.876591,
-    "LATITUDE": 43.23184246,
-    "WEBSITE": "http://www.thesouthgatechurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 47,
-    "NAME": "Eastgate Christian Fellowship",
-    "DENOMINATION": "Other",
-    "ADDRESS": "105 NASH RD S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.77511633,
-    "LATITUDE": 43.2258647,
-    "WEBSITE": "http://www.hcfchurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 48,
-    "NAME": "Trinity Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "720 NINTH AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83894853,
-    "LATITUDE": 43.22283448,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 49,
-    "NAME": "Ryerson United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "842 MAIN ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83630817,
-    "LATITUDE": 43.24635937,
-    "WEBSITE": "http://ryersonunitedhamilton.com/"
-  },
-  {
-    //Valid
-    "ID": 50,
-    "NAME": "Panagia Greek Orthodox Church Of The Dormition Of The Theotokos",
-    "DENOMINATION": "Orthodox",
-    "ADDRESS": "233 EAST 15TH ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86209254,
-    "LATITUDE": 43.23610997,
-    "WEBSITE": "http://www.panagiahamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 51,
-    "NAME": "Mountsberg Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "241 CAMPBELLVILLE RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.044319,
-    "LATITUDE": 43.434790,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 52,
-    "NAME": "St. Mary's Anglican Church",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "1831 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80960563,
-    "LATITUDE": 43.23225686,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 53,
-    "NAME": "Church of the Resurrection",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "435 MOHAWK RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90091496,
-    "LATITUDE": 43.23073102,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 54,
-    "NAME": "Heritage Green Seventh-Day Adventist Church",
-    "DENOMINATION": "Seventh Day Adventist",
-    "ADDRESS": "349 ISAAC BROCK DR",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.78978025,
-    "LATITUDE": 43.19306507,
-    "WEBSITE": "http://www.heritagegreenadventist.org/"
-  },
-  {
-    //Valid
-    "ID": 55,
-    "NAME": "Holy Cross Croatian Parish Hall",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "1883 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80808317,
-    "LATITUDE": 43.23210918,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 57,
-    "NAME": "Hess St Baptist Mission",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "179 HESS ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.875000,
-    "LATITUDE": 43.264541,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 58,
-    "NAME": "St. Shmooni Church",
-    "DENOMINATION": "Other",
-    "ADDRESS": "100 CLINTON ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.831406,
-    "LATITUDE": 43.256961,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 59,
-    "NAME": "Faith Lutheran Church",
-    "DENOMINATION": "Lutheran",
-    "ADDRESS": "1907 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80705079,
-    "LATITUDE": 43.23191392,
-    "WEBSITE": "http://faithlutheranhamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 60,
-    "NAME": "Pioneer Memorial United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "1974 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80488544,
-    "LATITUDE": 43.23072638,
-    "WEBSITE": "http://www.pioneermemorialunited.com/"
-  },
-  {
-    //Valid
-    "ID": 62,
-    "NAME": "Serbian Orthodox Saborni Temple",
-    "DENOMINATION": "Orthodox",
-    "ADDRESS": "149 NASH RD S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.7753823,
-    "LATITUDE": 43.22378595,
-    "WEBSITE": "http://snsn.ca/"
-  },
-  {
-    //Valid
-    "ID": 63,
-    "NAME": "Westdale United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "99 NORTH OVAL",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90690914,
-    "LATITUDE": 43.26209522,
-    "WEBSITE": "http://www.westdaleunited.ca/"
-  },
-  {
-    //Valid
-    "ID": 65,
-    "NAME": "Church Of Christ",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "321 EAST 27TH ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85015907,
-    "LATITUDE": 43.23037244,
-    "WEBSITE": "http://hamiltonchurchofchrist.ca/"
-  },
-  {
-    //Valid
-    "ID": 66,
-    "NAME": "Our Lady Of Assumption Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "63 REGIONAL RD 20",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.77035527,
-    "LATITUDE": 43.17245409,
-    "WEBSITE": "https://ourladyoftheassumptionparish.org/"
-  },
-  {
-    //Valid
-    "ID": 67,
-    "NAME": "The Salvation Army - Hamilton Temple Corps",
-    "DENOMINATION": "Salvation Army",
-    "ADDRESS": "28 REBECCA ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86730725,
-    "LATITUDE": 43.25796166,
-    "WEBSITE": "https://www.salvationarmy.ca/"
-  },
-  {
-    //Valid
-    "ID": 68,
-    "NAME": "Barton Stone United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "21 STONE CHURCH RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.890493,
-    "LATITUDE": 43.211089,
-    "WEBSITE": "http://www.bartonstoneunitedchurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 69,
-    "NAME": "First Hamilton Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "181 CHARLTON AVE W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88094436,
-    "LATITUDE": 43.25159683,
-    "WEBSITE": "http://www.firsthamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 71,
-    "NAME": "Mission Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "96 NORTH OVAL",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.9075977,
-    "LATITUDE": 43.2621538,
-    "WEBSITE": "http://www.missionbaptisthamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 72,
-    "NAME": "St. Paul's Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "70 JAMES ST S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87047614,
-    "LATITUDE": 43.2548413,
-    "WEBSITE": "http://stpaulshamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 75,
-    "NAME": "Paroisse Notre-Dame Du Perpetuel Secours",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "132 BLAKE ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84085347,
-    "LATITUDE": 43.24370369,
-    "WEBSITE": "http://www.paroissenotredame.com/"
-  },
-  {
-    //Valid
-    "ID": 76,
-    "NAME": "St. Vladimir Ukrainian Orthodox Church",
-    "DENOMINATION": "Ukrainian Orthodox",
-    "ADDRESS": "855 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.82764663,
-    "LATITUDE": 43.25463266,
-    "WEBSITE": "http://www.stvladshamilton.com/"
-  },
-  {
-    //Valid
-    "ID": 77,
-    "NAME": "Lifepoint United Pentecostal Church",
-    "DENOMINATION": "Pentecostal",
-    "ADDRESS": "887 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83974339,
-    "LATITUDE": 43.25175271,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 78,
-    "NAME": "Hamilton Christian Fellowship",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "137 STRATHCONA AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88377897,
-    "LATITUDE": 43.26573847,
-    "WEBSITE": "http://www.hcfchurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 79,
-    "NAME": "Pilgrim Lutheran Church",
-    "DENOMINATION": "Lutheran",
-    "ADDRESS": "1054 UPPER SHERMAN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85552991,
-    "LATITUDE": 43.21463596,
-    "WEBSITE": "http://www.pilgrimlutheranchurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 80,
-    "NAME": "New Westminster Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "1025 KING ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83266077,
-    "LATITUDE": 43.25051311,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 81,
-    "NAME": "Saint Peter By The Park",
-    "DENOMINATION": "Apostolic",
-    "ADDRESS": "55 VICTORIA AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85644975,
-    "LATITUDE": 43.25490435,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 82,
-    "NAME": "Bethel Baptist Church Of Ancaster",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "237 MANITOU WAY",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.990662,
-    "LATITUDE": 43.210875,
-    "WEBSITE": "None"
-  },
-  {
-    //Valids
-    "ID": 83,
-    "NAME": "Delta United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "47 OTTAWA ST S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.81978012,
-    "LATITUDE": 43.24108964,
-    "WEBSITE": "http://www.deltaunitedchurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 84,
-    "NAME": "Macnab Street Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "116 MACNAB ST S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87244047,
-    "LATITUDE": 43.25364101,
-    "WEBSITE": "http://macnabpresbyterian.ca/"
-  },
-  {
-    //Valid
-    "ID": 85,
-    "NAME": "St. Mary's Roman Catholic Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "146 PARK ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.869270,
-    "LATITUDE": 43.263054,
-    "WEBSITE": "http://www.stmaryshamilton.org.au/"
-  },
-  {
-    //Valid
-    "ID": 87,
+    "X": 600389.4,
+    "Y": 4787447.29,
+    "OBJECTID": 26,
     "NAME": "St. Gregory The Great Church (Slovenian)",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "125 CENTENNIAL PKY N",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.762338,
-    "LATITUDE": 43.232887,
-    "WEBSITE": "http://www.carantha.com/st__gregory_the_great_slovenian_church.htm"
+    "LONGITUDE": -79.76367584,
+    "LATITUDE": 43.23314195
   },
   {
-    //Valid
-    "ID": 88,
+    "X": 586559.74,
+    "Y": 4789102.34,
+    "OBJECTID": 27,
     "NAME": "Hamilton Mennonite Church",
     "DENOMINATION": "Mennonite Brethren",
     "ADDRESS": "143 LOWER HORNING RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.93370097,
-    "LATITUDE": 43.24975637,
-    "WEBSITE": "http://www.hmc.on.ca/"
+    "LATITUDE": 43.24975637
   },
   {
-    //Valid
-    "ID": 89,
+    "X": 591784.3384,
+    "Y": 4790717.215,
+    "OBJECTID": 28,
     "NAME": "St. Cyril And Methodius Slovak Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "204 PARK ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86908387,
-    "LATITUDE": 43.26367701,
-    "WEBSITE": "None"
+    "LATITUDE": 43.26367701
   },
   {
-    //Valid
-    "ID": 90,
+    "X": 591822,
+    "Y": 4787551.98,
+    "OBJECTID": 29,
     "NAME": "Transfiguration Lutheran Church",
     "DENOMINATION": "Lutheran",
     "ADDRESS": "232 FENNELL AVE E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.8691473,
-    "LATITUDE": 43.23517601,
-    "WEBSITE": "http://transfigurationlutheran.ca/"
+    "LATITUDE": 43.23517601
   },
   {
-    //Valid
-    "ID": 91,
+    "X": 590362.65,
+    "Y": 4789574.89,
+    "OBJECTID": 30,
     "NAME": "St. John The Evangelist Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "320 CHARLTON AVE W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88678526,
-    "LATITUDE": 43.25356451,
-    "WEBSITE": "http://www.rockonlocke.ca/"
+    "LATITUDE": 43.25356451
   },
   {
-    //Valid
-    "ID": 93,
-    "NAME": "Noah's Ark Children's Centre",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "118 LIMERIDGE RD E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88014738,
-    "LATITUDE": 43.21828638,
-    "WEBSITE": "http://noahskids.ca/mountain-view-christian-church/"
-  },
-  {
-    //Valid
-    "ID": 94,
-    "NAME": "West Avenue Christadelphian Church",
-    "DENOMINATION": "Christadelphian",
-    "ADDRESS": "20 WEST AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85749411,
-    "LATITUDE": 43.25383532,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 95,
-    "NAME": "Quakers The Religious Society Of Friends",
-    "DENOMINATION": "Religious Society of Friends",
-    "ADDRESS": "7 BUTTY PL",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.93362761,
-    "LATITUDE": 43.25097343,
-    "WEBSITE": "http://hamiltonquakers.ca/"
-  },
-  {
-    //Valid
-    "ID": 96,
-    "NAME": "Kingdom Hall of Jehovah’s Witnesses",
+    "X": 593564.58,
+    "Y": 4788969.94,
+    "OBJECTID": 31,
+    "NAME": "Jehovah's Witnesses (Victoria Congregation)",
     "DENOMINATION": "Jehovah's Witnesses",
     "ADDRESS": "57 DELAWARE AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.84744977,
-    "LATITUDE": 43.24772759,
-    "WEBSITE": "None"
+    "LATITUDE": 43.24772759
   },
   {
-    //Valid
-    "ID": 97,
+    "X": 595936.66,
+    "Y": 4786232.44,
+    "OBJECTID": 32,
     "NAME": "Elliott Heights Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "1300 FENNELL AVE E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.81871216,
-    "LATITUDE": 43.22278433,
-    "WEBSITE": "http://www.elliottheights.ca/"
+    "LATITUDE": 43.22278433
   },
   {
-    //Valid
-    "ID": 98,
-    "NAME": "St. Eugene's Parish",
+    "X": 597884.91,
+    "Y": 4787533.17,
+    "OBJECTID": 33,
+    "NAME": "St. Eugene's Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "232 QUEENSTON RD",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.793391,
-    "LATITUDE": 43.234305,
-    "WEBSITE": "http://steugenesparish.ca/"
+    "LONGITUDE": -79.79449733,
+    "LATITUDE": 43.23424425
   },
   {
-    //Valid
-    "ID": 99,
-    "NAME": "Slovak Byzantine Catholic Church",
+    "X": 597194.52,
+    "Y": 4789071.51,
+    "OBJECTID": 34,
+    "NAME": "Slovak Assumption Byzantine Catholic Church",
     "DENOMINATION": "Slovak",
     "ADDRESS": "1406 BARTON ST E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.80272681,
-    "LATITUDE": 43.2481828,
-    "WEBSITE": "http://church.assumptionslovakhall.ca/"
+    "LATITUDE": 43.2481828
   },
   {
-    //Valid
-    "ID": 100,
+    "X": 589389.59,
+    "Y": 4787331.78,
+    "OBJECTID": 35,
     "NAME": "Westmount Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "207 WEST 19TH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89913434,
-    "LATITUDE": 43.23348572,
-    "WEBSITE": "http://www.westmountbaptist.org/"
+    "LATITUDE": 43.23348572
   },
   {
-    //Valid
-    "ID": 101,
-    "NAME": "Community Beth Eden Church",
+    "X": 592260.27,
+    "Y": 4791562.6,
+    "OBJECTID": 36,
+    "NAME": "Calvin Grace Community Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "541 JAMES ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86307917,
-    "LATITUDE": 43.2712298,
-    "WEBSITE": "None"
+    "LATITUDE": 43.2712298
   },
   {
-    //Valid
-    "ID": 102,
+    "X": 595813.0362,
+    "Y": 4787950.039,
+    "OBJECTID": 37,
     "NAME": "St. John The Baptist Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "128 EDGEMONT ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.81993572,
-    "LATITUDE": 43.23826326,
-    "WEBSITE": "http://www.stjohnthebaptisthamilton.com/"
+    "LATITUDE": 43.23826326
   },
   {
-    //Valids
-    "ID": 103,
+    "X": 592757.72,
+    "Y": 4789518.65,
+    "OBJECTID": 38,
     "NAME": "Christ Evangelical Lutheran Lativian Church",
     "DENOMINATION": "Lutheran",
     "ADDRESS": "18 VICTORIA AVE S",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85729455,
-    "LATITUDE": 43.25276727,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25276727
   },
   {
-    //Valid
-    "ID": 104,
+    "X": 595941.67,
+    "Y": 4788954.46,
+    "OBJECTID": 39,
     "NAME": "Laidlaw United Church",
     "DENOMINATION": "United",
     "ADDRESS": "155 OTTAWA ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.81817695,
-    "LATITUDE": 43.24728949,
-    "WEBSITE": "https://www.laidlawchurch.ca/"
+    "LATITUDE": 43.24728949
   },
   {
-    //Valid
-    "ID": 105,
+    "X": 592824.6,
+    "Y": 4789509.61,
+    "OBJECTID": 40,
     "NAME": "St. Patrick's Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "420 KING ST E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85647233,
-    "LATITUDE": 43.25267766,
-    "WEBSITE": "http://www.stpatrickshamilton.ca/"
+    "LATITUDE": 43.25267766
   },
   {
-    //Valid
-    "ID": 106,
+    "X": 591989.0579,
+    "Y": 4790767.767,
+    "OBJECTID": 41,
     "NAME": "All Souls Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "21 BARTON ST W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86655347,
-    "LATITUDE": 43.26410717,
-    "WEBSITE": "None"
+    "LATITUDE": 43.26410717
   },
   {
-    //Valid
-    "ID": 107,
+    "X": 601437.72,
+    "Y": 4785712.53,
+    "OBJECTID": 42,
     "NAME": "Church Of Christ (Stoney Creek)",
     "DENOMINATION": "Non-denominational",
     "ADDRESS": "105 KING ST E",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.75108738,
-    "LATITUDE": 43.21738438,
-    "WEBSITE": "http://patchworkinthecreek.com/"
+    "LATITUDE": 43.21738438
   },
   {
-    //Valid
-    "ID": 108,
+    "X": 601065.33,
+    "Y": 4788118.67,
+    "OBJECTID": 43,
     "NAME": "Sikh Society Hamilton",
     "DENOMINATION": "Sikh",
     "ADDRESS": "86 COVINGTON ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.75523045,
-    "LATITUDE": 43.23909585,
-    "WEBSITE": "None"
+    "LATITUDE": 43.23909585
   },
   {
-    //Valid
-    "ID": 109,
+    "X": 590433.06,
+    "Y": 4790640.02,
+    "OBJECTID": 44,
     "NAME": "St. Demetrios Greek Orthodox Church",
     "DENOMINATION": "Greek Orthodox",
     "ADDRESS": "22 HEAD ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88574314,
-    "LATITUDE": 43.26314541,
-    "WEBSITE": "http://www.stdemetrios.ca/"
+    "LATITUDE": 43.26314541
   },
   {
-    //Valid
-    "ID": 110,
-    "NAME": "Skyway Chapel",
+    "X": 604228.61,
+    "Y": 4785610.5,
+    "OBJECTID": 45,
+    "NAME": "Our Saviour Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "482 HWY 8",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.71675323,
-    "LATITUDE": 43.21608561,
-    "WEBSITE": "None"
+    "LATITUDE": 43.21608561
   },
   {
-    //Valid
-    "ID": 111,
+    "X": 595696.55,
+    "Y": 4789349.08,
+    "OBJECTID": 46,
     "NAME": "St. Naum Of Ohrid Macedonian Orthodox Church",
     "DENOMINATION": "Orthodox",
     "ADDRESS": "235 KENSINGTON AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.82112723,
-    "LATITUDE": 43.25087333,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25087333
   },
   {
-    //Valid
-    "ID": 112,
+    "X": 591355.61,
+    "Y": 4787909.17,
+    "OBJECTID": 47,
     "NAME": "St. Peter And Paul Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "50 BRUCEDALE AVE E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87483096,
-    "LATITUDE": 43.23844841,
-    "WEBSITE": "None"
+    "LATITUDE": 43.23844841
   },
   {
-    //Valid
-    "ID": 113,
+    "X": 591360.4,
+    "Y": 4788067.92,
+    "OBJECTID": 48,
     "NAME": "Olivet United Church",
     "DENOMINATION": "United",
     "ADDRESS": "40 EMPRESS AV",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87474567,
-    "LATITUDE": 43.23987705,
-    "WEBSITE": "None"
+    "LATITUDE": 43.23987705
   },
   {
-    //Valid
-    "ID": 114,
+    "X": 583889.849,
+    "Y": 4790903.643,
+    "OBJECTID": 49,
     "NAME": "Jehovah's Witnesses (Christian Science Society)",
     "DENOMINATION": "Jehovah's Witnesses",
     "ADDRESS": "245 MILL ST",
     "COMMUNITY": "DUNDAS",
     "LONGITUDE": -79.96631076,
-    "LATITUDE": 43.26627572,
-    "WEBSITE": "None"
+    "LATITUDE": 43.26627572
   },
   {
-    //Valid
-    "ID": 115,
+    "X": 599091.56,
+    "Y": 4787990.39,
+    "OBJECTID": 50,
     "NAME": "St. Peter Yu Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "6 HEATH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.77955795,
-    "LATITUDE": 43.2382029,
-    "WEBSITE": "None"
+    "LATITUDE": 43.2382029
   },
   {
-    //Valid
-    "ID": 116,
+    "X": 593115.64,
+    "Y": 4785810.82,
+    "OBJECTID": 102,
+    "NAME": "Mountain Church Of The Nazarene",
+    "DENOMINATION": "Church of the Nazarene",
+    "ADDRESS": "910 UPPER SHERMAN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85351218,
+    "LATITUDE": 43.21934189
+  },
+  {
+    "X": 595941.48,
+    "Y": 4789283.18,
+    "OBJECTID": 103,
+    "NAME": "Templo Nueva Vida",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "279 GROSVENOR AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.81812207,
+    "LATITUDE": 43.25024891
+  },
+  {
+    "X": 591678.88,
+    "Y": 4789850.71,
+    "OBJECTID": 104,
+    "NAME": "Centenary United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "24 MAIN ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87052725,
+    "LATITUDE": 43.25588877
+  },
+  {
+    "X": 598255.17,
+    "Y": 4787370.71,
+    "OBJECTID": 105,
+    "NAME": "Fairfield - St. David's United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "93 DELENA AVE S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.78996732,
+    "LATITUDE": 43.23273353
+  },
+  {
+    "X": 588835.7984,
+    "Y": 4787236.311,
+    "OBJECTID": 106,
+    "NAME": "Jesus First Assembly (Peoples Church)",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "510 MOHAWK RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90596864,
+    "LATITUDE": 43.23269163
+  },
+  {
+    "X": 593893.58,
+    "Y": 4790129.71,
+    "OBJECTID": 107,
+    "NAME": "Hamilton Korean Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "200 SANFORD AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84320025,
+    "LATITUDE": 43.25812793
+  },
+  {
+    "X": 589687.803,
+    "Y": 4784561.99,
+    "OBJECTID": 108,
+    "NAME": "Parkview Church",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1136 WEST 5TH ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.89591251,
+    "LATITUDE": 43.20851372
+  },
+  {
+    "X": 594084.43,
+    "Y": 4790062.17,
+    "OBJECTID": 109,
+    "NAME": "Ridgecrest Southern Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "582 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84086092,
+    "LATITUDE": 43.25749608
+  },
+  {
+    "X": 587657.8216,
+    "Y": 4789954.639,
+    "OBJECTID": 110,
+    "NAME": "Canadian Martyrs Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "38 EMERSON",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.92004084,
+    "LATITUDE": 43.25730282
+  },
+  {
+    "X": 589176.5777,
+    "Y": 4785155.01,
+    "OBJECTID": 111,
+    "NAME": "Jehovah's Witnesses (Stone Church)",
+    "DENOMINATION": "Jehovah's Witnesses",
+    "ADDRESS": "277 STONE CHURCH RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90210896,
+    "LATITUDE": 43.2139133
+  },
+  {
+    "X": 594090.23,
+    "Y": 4789971.65,
+    "OBJECTID": 112,
+    "NAME": "John Calvin Hungarian Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "121 BIRCH AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84080494,
+    "LATITUDE": 43.25668042
+  },
+  {
+    "X": 594499.86,
+    "Y": 4789886.04,
+    "OBJECTID": 113,
+    "NAME": "St. Ann's Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "120 SHERMAN AV N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83577399,
+    "LATITUDE": 43.25585844
+  },
+  {
+    "X": 594586.69,
+    "Y": 4789864.3,
+    "OBJECTID": 114,
+    "NAME": "St. Stanislaus Roman Catholic Polish Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "8 ST ANN ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8347082,
+    "LATITUDE": 43.25565183
+  },
+  {
+    "X": 594648.9915,
+    "Y": 4789847.436,
+    "OBJECTID": 115,
+    "NAME": "Church Of The Holy Spirit",
+    "DENOMINATION": "Ukranian Catholic",
+    "ADDRESS": "15 ST. OLGA",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83394371,
+    "LATITUDE": 43.25549219
+  },
+  {
+    "X": 588552.5728,
+    "Y": 4784776.947,
+    "OBJECTID": 116,
+    "NAME": "West Highland Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "1605 GARTH ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90985062,
+    "LATITUDE": 43.21058301
+  },
+  {
+    "X": 592478.3826,
+    "Y": 4783018.441,
+    "OBJECTID": 117,
+    "NAME": "Eternal Spring United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "708 RYMAL RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86182446,
+    "LATITUDE": 43.1942805
+  },
+  {
+    "X": 587249.52,
+    "Y": 4784609.93,
+    "OBJECTID": 118,
+    "NAME": "Rehoboth United Reformed Church",
+    "DENOMINATION": "Reformed",
+    "ADDRESS": "78 FALCONRIDGE DR",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.92591579,
+    "LATITUDE": 43.20923106
+  },
+  {
+    "X": 589107.55,
+    "Y": 4786686.67,
+    "OBJECTID": 119,
+    "NAME": "Living Hope Christian Assembly",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1045 GARTH ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90271134,
+    "LATITUDE": 43.22771112
+  },
+  {
+    "X": 593549.65,
+    "Y": 4789728.12,
+    "OBJECTID": 120,
+    "NAME": "Church Of God Of Prophecy",
+    "DENOMINATION": "Other",
+    "ADDRESS": "64 WENTWORTH ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84750493,
+    "LATITUDE": 43.25455524
+  },
+  {
+    "X": 587049.9,
+    "Y": 4790001.44,
+    "OBJECTID": 121,
+    "NAME": "Binkley United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "1570 MAIN ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.92752185,
+    "LATITUDE": 43.25779463
+  },
+  {
+    "X": 595663.22,
+    "Y": 4789062.51,
+    "OBJECTID": 122,
+    "NAME": "Kensington Gospel Hall",
+    "DENOMINATION": "Other",
+    "ADDRESS": "164 KENSINGTON AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82158747,
+    "LATITUDE": 43.24829763
+  },
+  {
+    "X": 592503.6427,
+    "Y": 4790588.751,
+    "OBJECTID": 123,
+    "NAME": "St. Stephen's Hungarian Roman Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "130 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86024429,
+    "LATITUDE": 43.26243251
+  },
+  {
+    "X": 587459.93,
+    "Y": 4785966.98,
+    "OBJECTID": 124,
+    "NAME": "Grace Mandarin Evangelical Church",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "6 CASWELL DR",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.923111,
+    "LATITUDE": 43.22142444
+  },
+  {
+    "X": 594045.35,
+    "Y": 4788465.3,
+    "OBJECTID": 125,
+    "NAME": "Cumberland Christian Assembly",
+    "DENOMINATION": "Pentacostal Assemblies of Canada",
+    "ADDRESS": "240 CUMBERLAND AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84161482,
+    "LATITUDE": 43.24312458
+  },
+  {
+    "X": 597594.87,
+    "Y": 4788884.67,
+    "OBJECTID": 126,
+    "NAME": "Little Bethal Community Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "320 PALING AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.79782932,
+    "LATITUDE": 43.24644902
+  },
+  {
+    "X": 589164.5239,
+    "Y": 4790650.556,
+    "OBJECTID": 51,
     "NAME": "St. Cuthbert's Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "2 BOND ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.90136867,
-    "LATITUDE": 43.26339143,
-    "WEBSITE": "https://www.saintcs.com/"
+    "LATITUDE": 43.26339143
   },
   {
-    //Valid
-    "ID": 117,
+    "X": 603051.97,
+    "Y": 4785972.55,
+    "OBJECTID": 52,
     "NAME": "St. Francis Xavier Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "304 HWY 8",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.73116875,
-    "LATITUDE": 43.21950654,
-    "WEBSITE": "https://www.saintfxstoneycreek.com/"
+    "LATITUDE": 43.21950654
   },
   {
-    //Valid
-    "ID": 118,
+    "X": 591385.7452,
+    "Y": 4788585.313,
+    "OBJECTID": 53,
     "NAME": "Christ Church Unity",
     "DENOMINATION": "Unity",
     "ADDRESS": "21 ROSEDENE AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87434779,
-    "LATITUDE": 43.24453206,
-    "WEBSITE": "http://www.unityhamilton.com/"
+    "LATITUDE": 43.24453206
   },
   {
-    //Valid
-    "ID": 119,
+    "X": 591454.35,
+    "Y": 4787649.8,
+    "OBJECTID": 54,
     "NAME": "Holy Trinity Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "120 FENNELL AVE E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87365808,
-    "LATITUDE": 43.23610134,
-    "WEBSITE": "https://niagaraanglican.ca/parish/holy-trinity-hamilton"
+    "LATITUDE": 43.23610134
   },
   {
-    //Valid
-    "ID": 120,
+    "X": 590959.27,
+    "Y": 4789325.25,
+    "OBJECTID": 55,
     "NAME": "Central Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "165 CHARLTON AV W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87947783,
-    "LATITUDE": 43.25124526,
-    "WEBSITE": "https://www.cpchamilton.ca/"
+    "LATITUDE": 43.25124526
   },
   {
-    //Valid
-    "ID": 121,
+    "X": 599360,
+    "Y": 4788199.15,
+    "OBJECTID": 56,
     "NAME": "St. Mina's Coptic Orthodox Church",
     "DENOMINATION": "Orthodox",
     "ADDRESS": "480 MELVIN AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.77621488,
-    "LATITUDE": 43.24004698,
-    "WEBSITE": "http://www.stminahamilton.ca/"
+    "LATITUDE": 43.24004698
   },
   {
-    //Valid
-    "ID": 122,
+    "X": 597180.04,
+    "Y": 4787320.82,
+    "OBJECTID": 57,
     "NAME": "Hamilton East Seventh-Day Adventist Church",
     "DENOMINATION": "Seventh Day Adventist",
     "ADDRESS": "203 BELL AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.80321371,
-    "LATITUDE": 43.23242365,
-    "WEBSITE": "http://hamiltoneaston.adventistchurch.org/"
+    "LATITUDE": 43.23242365
   },
   {
-    //Valid
-    "ID": 123,
+    "X": 594458.99,
+    "Y": 4790042.04,
+    "OBJECTID": 58,
     "NAME": "Generation Now Ministries",
     "DENOMINATION": "Non-denominational",
     "ADDRESS": "177 SHERMAN AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.83625065,
-    "LATITUDE": 43.25726801,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25726801
   },
   {
-    "ID": 124,
-    "NAME": "St. Catherine of Siena Roman Catholic Church",
+    "X": 589729.5646,
+    "Y": 4783608.03,
+    "OBJECTID": 59,
+    "NAME": "Corpus Christi Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "1694 UPPER JAMES ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89555347,
-    "LATITUDE": 43.19992017,
-    "WEBSITE": "None"
+    "LATITUDE": 43.19992017
   },
   {
-    //Valid
-    "ID": 125,
+    "X": 586885.96,
+    "Y": 4789406.33,
+    "OBJECTID": 60,
     "NAME": "Westside Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "261 WHITNEY AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.92963514,
-    "LATITUDE": 43.25245571,
-    "WEBSITE": "https://www.wbchamilton.com/"
+    "LATITUDE": 43.25245571
   },
   {
-    //Valid
-    "ID": 126,
+    "X": 595879.64,
+    "Y": 4781775.65,
+    "OBJECTID": 61,
     "NAME": "Trinity United Church",
     "DENOMINATION": "United",
     "ADDRESS": "10 TRINITY CHURCH RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.82018765,
-    "LATITUDE": 43.18266773,
-    "WEBSITE": "https://www.trinityunitedgrimsby.ca/"
+    "LATITUDE": 43.18266773
   },
   {
-    //Valid
-    "ID": 127,
+    "X": 591804.22,
+    "Y": 4776293.47,
+    "OBJECTID": 62,
     "NAME": "Case United Church",
     "DENOMINATION": "United",
     "ADDRESS": "6180 WHITE CHURCH RD",
     "COMMUNITY": "GLANBROOK",
     "LONGITUDE": -79.8712355,
-    "LATITUDE": 43.13381729,
-    "WEBSITE": "http://caseunitedchurch.ca/"
+    "LATITUDE": 43.13381729
   },
   {
-    //Valid
-    "ID": 128,
+    "X": 588469.2099,
+    "Y": 4790029.909,
+    "OBJECTID": 63,
     "NAME": "Grace Lutheran Church",
     "DENOMINATION": "Lutheran",
     "ADDRESS": "1107 MAIN ST W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.91003407,
-    "LATITUDE": 43.25788567,
-    "WEBSITE": "http://glc.ca/"
+    "LATITUDE": 43.25788567
   },
   {
-    //Valid
-    "ID": 129,
+    "X": 590506.3678,
+    "Y": 4786158.352,
+    "OBJECTID": 64,
     "NAME": "New Testament Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "21 JAMESTON AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88557584,
-    "LATITUDE": 43.22278816,
-    "WEBSITE": "http://www.ntbch.ca/"
+    "LATITUDE": 43.22278816
   },
   {
-    //Valid
-    "ID": 130,
+    "X": 599211.62,
+    "Y": 4789629.5,
+    "OBJECTID": 65,
     "NAME": "Hamilton Buddhist Temple",
     "DENOMINATION": "Buddhism",
     "ADDRESS": "671 TATE AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.77778456,
-    "LATITUDE": 43.25294345,
-    "WEBSITE": "https://hamiltonbuddhisttemple.wordpress.com/"
+    "LATITUDE": 43.25294345
   },
   {
-    //Valid
-    "ID": 131,
+    "X": 603142.82,
+    "Y": 4781729.15,
+    "OBJECTID": 66,
     "NAME": "Tapleytown United Church",
     "DENOMINATION": "United",
     "ADDRESS": "413 MUD ST E",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.73084261,
-    "LATITUDE": 43.18129267,
-    "WEBSITE": "http://fskt.ca/"
+    "LATITUDE": 43.18129267
   },
   {
-    //Valid
-    "ID": 132,
+    "X": 593052.63,
+    "Y": 4789776.43,
+    "OBJECTID": 67,
     "NAME": "Emerald Full Gospel Temple",
-    "DENOMINATION": "Full Gospel",
+    "DENOMINATION": "Non-Denominational",
     "ADDRESS": "73 EMERALD ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85361866,
-    "LATITUDE": 43.25505169,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25505169
   },
   {
-    //Valid
-    "ID": 133,
+    "X": 590272.93,
+    "Y": 4789345.4,
+    "OBJECTID": 68,
     "NAME": "Stanley Avenue Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "115 STANLEY AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88792795,
-    "LATITUDE": 43.25150917,
-    "WEBSITE": "http://stanleyavenue.ca/"
+    "LATITUDE": 43.25150917
   },
   {
-    //Valid
-    "ID": 135,
+    "X": 594209.7773,
+    "Y": 4783325.605,
+    "OBJECTID": 69,
+    "NAME": "The Life Centre",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1439 UPPER OTTAWA ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84046723,
+    "LATITUDE": 43.19683192
+  },
+  {
+    "X": 597192.98,
+    "Y": 4788682,
+    "OBJECTID": 70,
     "NAME": "St. Alban The Martyr Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "200 COPE ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.80281446,
-    "LATITUDE": 43.24467634,
-    "WEBSITE": "None"
+    "LATITUDE": 43.24467634
   },
   {
-    //Valid
-    "ID": 136,
+    "X": 595871.1,
+    "Y": 4788701.27,
+    "OBJECTID": 71,
     "NAME": "East Hamilton Spiritual Church",
     "DENOMINATION": "Spiritualists",
     "ADDRESS": "83 OTTAWA ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.8190901,
-    "LATITUDE": 43.24501906,
-    "WEBSITE": "http://www.easthamiltonspiritualchurch.net/"
+    "LATITUDE": 43.24501906
   },
   {
-    //Valid
-    "ID": 137,
+    "X": 593925.25,
+    "Y": 4790981.67,
+    "OBJECTID": 72,
     "NAME": "St. David's Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "474 WENTWORTH ST N",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.842765,
-    "LATITUDE": 43.265472,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.84266485,
+    "LATITUDE": 43.26579404
   },
   {
-    //Valid
-    "ID": 138,
+    "X": 601634.48,
+    "Y": 4782126.79,
+    "OBJECTID": 73,
     "NAME": "Jehovah's Witnesses (Tapelytown Congregation)",
     "DENOMINATION": "Jehovah's Witnesses",
     "ADDRESS": "218 MUD ST",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.74932507,
-    "LATITUDE": 43.18507684,
-    "WEBSITE": "None"
+    "LATITUDE": 43.18507684
   },
   {
-    //Valid
-    "ID": 139,
+    "X": 607119.75,
+    "Y": 4785211.53,
+    "OBJECTID": 74,
     "NAME": "Winona Gospel Church",
     "DENOMINATION": "Other",
     "ADDRESS": "218 GLOVER RD",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.68124449,
-    "LATITUDE": 43.21208917,
-    "WEBSITE": "http://www.winonagospelchurch.org/"
+    "LATITUDE": 43.21208917
   },
   {
-    //Valid
-    "ID": 140,
-    "NAME": "Ukrainian Catholic Church of the Resurrection",
+    "X": 592476.7125,
+    "Y": 4786198.543,
+    "OBJECTID": 75,
+    "NAME": "Church Of The Resurrection",
     "DENOMINATION": "Ukranian Catholic",
     "ADDRESS": "18 MALL RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86131248,
-    "LATITUDE": 43.2229111,
-    "WEBSITE": "http://www.angmtnparishes.on.ca/"
+    "LATITUDE": 43.2229111
   },
   {
-    //Valid
-    "ID": 141,
+    "X": 597785.6,
+    "Y": 4783430.59,
+    "OBJECTID": 76,
     "NAME": "Paramount Drive Alliance Church",
     "DENOMINATION": "Alliance",
     "ADDRESS": "1035 PARAMOUNT DR",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.79644681,
-    "LATITUDE": 43.19732259,
-    "WEBSITE": "http://pdacfamily.com/"
+    "LATITUDE": 43.19732259
   },
   {
-    //Valid
-    "ID": 143,
+    "X": 594284.48,
+    "Y": 4782563.75,
+    "OBJECTID": 77,
+    "NAME": "Life Christian Church",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1205 RYMAL RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83967794,
+    "LATITUDE": 43.18996367
+  },
+  {
+    "X": 595933.03,
+    "Y": 4788725.22,
+    "OBJECTID": 78,
     "NAME": "First Church Of The Nazarene",
     "DENOMINATION": "Church of the Nazarene",
     "ADDRESS": "92 OTTAWA ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.81832326,
-    "LATITUDE": 43.2452268,
-    "WEBSITE": "None"
+    "LATITUDE": 43.2452268
   },
   {
-    //Valid
-    "ID": 144,
-    "NAME": "St. Catherine of Siena Roman Catholic Church",
+    "X": 592672.7855,
+    "Y": 4786166.184,
+    "OBJECTID": 79,
+    "NAME": "Our Lady Of Lourdes Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "416 MOHAWK RD E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85890409,
-    "LATITUDE": 43.22259572,
-    "WEBSITE": "None"
+    "LATITUDE": 43.22259572
   },
   {
-    //Valid
-    "ID": 145,
+    "X": 597036.34,
+    "Y": 4775036.44,
+    "OBJECTID": 80,
     "NAME": "Binbrook Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "3084 BINBROOK RD",
     "COMMUNITY": "GLANBROOK",
-    "LONGITUDE": -79.806828,
-    "LATITUDE": 43.121637,
-    "WEBSITE": "http://www.binbrookbaptist.org/"
+    "LONGITUDE": -79.80713804,
+    "LATITUDE": 43.1218477
   },
   {
-    //Valid
-    "ID": 147,
+    "X": 592479.39,
+    "Y": 4789739.11,
+    "OBJECTID": 81,
+    "NAME": "Church Of Jesus Christ Of Latter-Day Saints",
+    "DENOMINATION": "Jesus Christ of Latter-Day Saints",
+    "ADDRESS": "1 JARVIS ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8606857,
+    "LATITUDE": 43.25478625
+  },
+  {
+    "X": 594245.43,
+    "Y": 4786574.12,
+    "OBJECTID": 82,
     "NAME": "Japanese United Church (Hamilton)",
     "DENOMINATION": "United",
     "ADDRESS": "715 UPPER GAGE AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.83947404,
-    "LATITUDE": 43.22607355,
-    "WEBSITE": "http://hjuc.ca/"
+    "LATITUDE": 43.22607355
   },
   {
-    //Valid
-    "ID": 148,
+    "X": 588310.18,
+    "Y": 4787232.97,
+    "OBJECTID": 83,
     "NAME": "Regina Mundi Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "631 MOHAWK RD W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.91244112,
-    "LATITUDE": 43.23272327,
-    "WEBSITE": "http://reginamundi.ca/"
+    "LATITUDE": 43.23272327
   },
   {
-    //Valid
-    "ID": 149,
+    "X": 595657.08,
+    "Y": 4788255.63,
+    "OBJECTID": 84,
     "NAME": "Grace Anglican Church (Hamilton)",
     "DENOMINATION": "Anglican",
     "ADDRESS": "1401 KING ST E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.82180311,
-    "LATITUDE": 43.24103423,
-    "WEBSITE": "None"
+    "LATITUDE": 43.24103423
   },
   {
-    //Value
-    "ID": 150,
+    "X": 590420.78,
+    "Y": 4787048.18,
+    "OBJECTID": 85,
     "NAME": "West Fifth Bible Chapel",
     "DENOMINATION": "Other",
     "ADDRESS": "440 WEST 5TH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88648368,
-    "LATITUDE": 43.23080956,
-    "WEBSITE": "http://westfifthbiblechapel.com/"
+    "LATITUDE": 43.23080956
   },
   {
-    //Value
-    "ID": 151,
+    "X": 592891.08,
+    "Y": 4790131.24,
+    "OBJECTID": 86,
     "NAME": "West Avenue Christian Church",
     "DENOMINATION": "Pentecostal",
     "ADDRESS": "168 WEST AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85554869,
-    "LATITUDE": 43.25826593,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25826593
   },
   {
-    //Valid
-    "ID": 152,
+    "X": 597135.45,
+    "Y": 4788223.45,
+    "OBJECTID": 87,
     "NAME": "St. Paul's United Church (Hamilton)",
     "DENOMINATION": "United",
     "ADDRESS": "42 TRAGINA AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.80360374,
-    "LATITUDE": 43.24055555,
-    "WEBSITE": "https://stpaulsdundas.com/"
+    "LATITUDE": 43.24055555
   },
   {
-    //Valid
-    "ID": 153,
-    "NAME": "Holy Trinity Ethiopian Orthodox Church",
-    "DENOMINATION": "Orthodox",
+    "X": 589929,
+    "Y": 4789299.6,
+    "OBJECTID": 88,
+    "NAME": "St. Boniface German Roman Catholic Church",
+    "DENOMINATION": "Roman Catholic",
     "ADDRESS": "420 ABERDEEN AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89217152,
-    "LATITUDE": 43.25113794,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25113794
   },
   {
-    //Valid
-    "ID": 154,
+    "X": 593095.13,
+    "Y": 4789576.91,
+    "OBJECTID": 89,
     "NAME": "St. John And St. Andrew",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "19 TISDALE ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85312889,
-    "LATITUDE": 43.25325019,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25325019
   },
   {
-    //Valid
-    "ID": 155,
+    "X": 593985.28,
+    "Y": 4789109.94,
+    "OBJECTID": 90,
     "NAME": "St. Giles United Church",
     "DENOMINATION": "United",
     "ADDRESS": "85 HOLTON AVE S",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.84224465,
-    "LATITUDE": 43.24893567,
-    "WEBSITE": "None"
+    "LATITUDE": 43.24893567
   },
   {
-    //Value
-    "ID": 156,
+    "X": 590485.33,
+    "Y": 4786853.44,
+    "OBJECTID": 91,
     "NAME": "Immanuel Christian Reformed Church",
     "DENOMINATION": "Christian Reformed",
     "ADDRESS": "61 MOHAWK RD W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88572085,
-    "LATITUDE": 43.22904857,
-    "WEBSITE": "http://www.immanuelministries.ca/"
+    "LATITUDE": 43.22904857
   },
   {
-    //Valid
-    "ID": 157,
+    "X": 590320.48,
+    "Y": 4787598.34,
+    "OBJECTID": 92,
     "NAME": "Buchanan Park Free Methodist Church",
     "DENOMINATION": "Free Methodist",
     "ADDRESS": "204 DELMAR DR",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88762854,
-    "LATITUDE": 43.23577468,
-    "WEBSITE": "http://www.buchananparkchurch.org/"
+    "LATITUDE": 43.23577468
   },
   {
-    //Valid
-    "ID": 158,
+    "X": 592267.9441,
+    "Y": 4788481.897,
+    "OBJECTID": 93,
     "NAME": "Hamilton Mountain Seventh-Day Adventist Church",
     "DENOMINATION": "Seventh Day Adventist",
     "ADDRESS": "284 CONCESSION ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86350063,
-    "LATITUDE": 43.24349358,
-    "WEBSITE": "http://hamiltonmountain.org/"
+    "LATITUDE": 43.24349358
   },
   {
-    //Valid
-    "ID": 159,
+    "X": 596086.66,
+    "Y": 4789485.42,
+    "OBJECTID": 94,
     "NAME": "St. James The Apostle Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "437 OTTAWA ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.81629874,
-    "LATITUDE": 43.25205114,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25205114
   },
   {
-    //Valid
-    "ID": 160,
-    "NAME": "Trinity Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "922 MAIN ST E",
+    "X": 595158.22,
+    "Y": 4786358.89,
+    "OBJECTID": 95,
+    "NAME": "St. Margaret Mary Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "20 IDLEWOOD AVE",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.83243727,
-    "LATITUDE": 43.2453757,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.82827348,
+    "LATITUDE": 43.2240213
   },
   {
-    //Valid
-    "ID": 161,
-    "NAME": "St. Margaret's Anglican Church",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "134 EMERSON ST",
+    "X": 597013.57,
+    "Y": 4786530.29,
+    "OBJECTID": 96,
+    "NAME": "Faith Gospel Church",
+    "DENOMINATION": "Associated Gospel Churches",
+    "ADDRESS": "518 COCHRANE RD",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.92168181,
-    "LATITUDE": 43.25385369,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.80540239,
+    "LATITUDE": 43.22532812
   },
   {
-    //Valid
-    "ID": 164,
-    "NAME": "Jehovah's Witnesses (Delta And East Hamilton Congregation)",
-    "DENOMINATION": "Jehovah's Witnesses",
-    "ADDRESS": "1441 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80092934,
-    "LATITUDE": 43.24824555,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 165,
-    "NAME": "Stoney Creek Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "79 COLLEGIATE AVE",
+    "X": 597138.9992,
+    "Y": 4781513.572,
+    "OBJECTID": 97,
+    "NAME": "Rymal Road Community Church",
+    "DENOMINATION": "Free Methodist",
+    "ADDRESS": "1967 RYMAL RD",
     "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.74604312,
-    "LATITUDE": 43.22008136,
-    "WEBSITE": "http://www.stoneycreekbaptist.com/"
+    "LONGITUDE": -79.80474038,
+    "LATITUDE": 43.18014745
   },
   {
-    //Valid
-    "ID": 166,
-    "NAME": "Reorganized Church Of Jesus Christ Of Latter Day Saints",
-    "DENOMINATION": "Reorganized Church of Jesus Christ of Latter Day Saints",
-    "ADDRESS": "817 UPPER SHERMAN AVE",
+    "X": 593391.7,
+    "Y": 4787090.64,
+    "OBJECTID": 98,
+    "NAME": "Mount Olive Pentecostal Apostolic Church",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "307 EAST 27TH ST",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85109162,
-    "LATITUDE": 43.22201989,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.84989724,
+    "LATITUDE": 43.23082989
   },
   {
-    //Valid
-    "ID": 167,
-    "NAME": "Apostolic Holiness Church Of Jesus Christ",
+    "X": 603548.21,
+    "Y": 4785833.81,
+    "OBJECTID": 99,
+    "NAME": "Hope Community Church",
+    "DENOMINATION": "Mennonite",
+    "ADDRESS": "380 HWY 8",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.72508629,
+    "LATITUDE": 43.21818961
+  },
+  {
+    "X": 593094.7,
+    "Y": 4785743.55,
+    "OBJECTID": 100,
+    "NAME": "New Apostolic Church",
     "DENOMINATION": "Apostolic",
-    "ADDRESS": "42 ROYAL AVE",
+    "ADDRESS": "922 UPPER SHERMAN AVE",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.92091762,
-    "LATITUDE": 43.25335658,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.85378129,
+    "LATITUDE": 43.21873884
   },
   {
-    //Valid
-    "ID": 168,
-    "NAME": "Cheyne Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "7 KING ST W",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.75893472,
-    "LATITUDE": 43.21677535,
-    "WEBSITE": "http://cheynechurch.com/"
-  },
-  {
-    //Valid
-    "ID": 169,
-    "NAME": "Chalmers Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "200 MOUNTAIN PARK AVE",
+    "X": 589738.5324,
+    "Y": 4785187.117,
+    "OBJECTID": 101,
+    "NAME": "Church Of God In Hamilton",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "186 ANNABELLE ST",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85093027,
-    "LATITUDE": 43.24223578,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.89518654,
+    "LATITUDE": 43.21413576
   },
   {
-    //Valid
-    "ID": 171,
-    "NAME": "Burkholder United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "465 MOHAWK RD E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85641488,
-    "LATITUDE": 43.22313064,
-    "WEBSITE": "http://www.burkholderunited.ca/"
+    "X": 585473.0548,
+    "Y": 4788655.979,
+    "OBJECTID": 1,
+    "NAME": "Woodvale Pentecostal Church",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "1221 WILSON ST E",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.94715446,
+    "LATITUDE": 43.24586169
   },
   {
-    //Valid
-    "ID": 172,
-    "NAME": "The Salvation Army - Hamilton Loation Corps",
-    "DENOMINATION": "Salvation Army",
-    "ADDRESS": "573 CONCESSION ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85069678,
-    "LATITUDE": 43.24091011,
-    "WEBSITE": "https://www.salvationarmy.ca/"
-  },
-  {
-    //Valid
-    "ID": 173,
-    "NAME": "Binbrook United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "2623 BINBROOK RD",
-    "COMMUNITY": "GLANBROOK",
-    "LONGITUDE": -79.802445,
-    "LATITUDE": 43.120008,
-    "WEBSITE": "http://binbrookblackheath.org/"
-  },
-  {
-    //Valid
-    "ID": 175,
-    "NAME": "St. Paul's Anglican Church  (Mount Hope)",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "2869 HWY 6",
-    "COMMUNITY": "GLANBROOK",
-    "LONGITUDE": -79.90897077,
-    "LATITUDE": 43.16586181,
-    "WEBSITE": "https://niagaraanglican.ca/parish/st-pauls-glanford-mount-hope"
-  },
-  {
-    //Valid
-    "ID": 176,
-    "NAME": "Heritage Green Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "956 PARAMOUNT DR",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.79946559,
-    "LATITUDE": 43.19270206,
-    "WEBSITE": "http://www.hgbc.ca/"
-  },
-  {
-    //Valid
-    "ID": 177,
-    "NAME": "St. Mary Armenian Church",
+    "X": 599454.04,
+    "Y": 4786394.28,
+    "OBJECTID": 2,
+    "NAME": "St. Nicholas Serbian Orthodox Cathedral And Hall",
     "DENOMINATION": "Orthodox",
-    "ADDRESS": "8 MAYHURST AVE",
+    "ADDRESS": "149 NASH RD S",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.79832014,
-    "LATITUDE": 43.22945684,
-    "WEBSITE": "http://hamiltonstmary.com/"
+    "LONGITUDE": -79.7753823,
+    "LATITUDE": 43.22378595
   },
   {
-    //Valid
-    "ID": 178,
-    "NAME": "Living Water Ministries",
+    "X": 588716.74,
+    "Y": 4790500.71,
+    "OBJECTID": 3,
+    "NAME": "Westdale United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "99 NORTH OVAL",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90690914,
+    "LATITUDE": 43.26209522
+  },
+  {
+    "X": 589963.7027,
+    "Y": 4784871.282,
+    "OBJECTID": 4,
+    "NAME": "St. Timothys Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "63 STONE CHURCH RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.89246633,
+    "LATITUDE": 43.21126547
+  },
+  {
+    "X": 593371.1366,
+    "Y": 4787039.546,
+    "OBJECTID": 5,
+    "NAME": "Church Of Christ",
     "DENOMINATION": "Non-denominational",
-    "ADDRESS": "1475 BARTON ST E",
+    "ADDRESS": "321 EAST 27TH ST",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80001951,
-    "LATITUDE": 43.24798874,
-    "WEBSITE": "http://www.hamilton-living-water-ministry.org/"
+    "LONGITUDE": -79.85015907,
+    "LATITUDE": 43.23037244
   },
   {
-    //Valid
-    "ID": 179,
-    "NAME": "Stoney Creek Alliance Church",
-    "DENOMINATION": "Alliance",
-    "ADDRESS": "591 HWY 8",
+    "X": 599946.06,
+    "Y": 4780699.67,
+    "OBJECTID": 6,
+    "NAME": "Our Lady Of Assumption Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "63 REGIONAL RD 20",
     "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.707704,
-    "LATITUDE": 43.215273,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.77035527,
+    "LATITUDE": 43.17245409
   },
   {
-    //Valid
-    "ID": 180,
-    "NAME": "Hamilton Chinese Alliance Church",
-    "DENOMINATION": "Alliance",
-    "ADDRESS": "50 BREADALBANE ST",
+    "X": 591937.1292,
+    "Y": 4790084.45,
+    "OBJECTID": 7,
+    "NAME": "The Salvation Army - Hamilton Temple Corps",
+    "DENOMINATION": "Salvation Army",
+    "ADDRESS": "28 REBECCA ST",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88822293,
-    "LATITUDE": 43.26379447,
-    "WEBSITE": "http://hamiltoncac.org/"
+    "LONGITUDE": -79.86730725,
+    "LATITUDE": 43.25796166
   },
   {
-    //Valid
-    "ID": 181,
-    "NAME": "Korean United Church",
+    "X": 590191.967,
+    "Y": 4784841.01,
+    "OBJECTID": 8,
+    "NAME": "Barton Stone United Church",
     "DENOMINATION": "United",
-    "ADDRESS": "69 PEARL ST N",
+    "ADDRESS": "21 STONE CHURCH RD W",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88164458,
-    "LATITUDE": 43.26245138,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.88966165,
+    "LATITUDE": 43.2109657
   },
   {
-    //Valid
-    "ID": 182,
-    "NAME": "International Missionary Society of the Seventh-Day Adventist Church Reform Movement",
-    "DENOMINATION": "Seventh Day Adventist Reformed",
-    "ADDRESS": "673 York Rd",
-    "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.908164,
-    "LATITUDE": 43.297797,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 183,
-    "NAME": "Christs Church Cathedral",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "252 JAMES ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86560075,
-    "LATITUDE": 43.2628833,
-    "WEBSITE": "https://cathedralhamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 185,
-    "NAME": "St. Nicholas Ukrainian Catholic Parish",
-    "DENOMINATION": "Ukranian Catholic",
-    "ADDRESS": "260 MELVIN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.78572251,
-    "LATITUDE": 43.24193311,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 186,
-    "NAME": "Holy Resurrection Romanian Orthodox Church",
-    "DENOMINATION": "Romanian Orthodox",
-    "ADDRESS": "20 MURRAY ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8663978,
-    "LATITUDE": 43.26568596,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 188,
-    "NAME": "Knox Presbyterian Church (Binbrook)",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "2553 BINBROOK RD",
-    "COMMUNITY": "GLANBROOK",
-    "LONGITUDE": -79.80006502,
-    "LATITUDE": 43.11936838,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 189,
-    "NAME": "Sacred Heart Roman Catholic Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "24 POPLAR AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84817568,
-    "LATITUDE": 43.24115795,
-    "WEBSITE": "http://www.sacredhearthamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 190,
-    "NAME": "St. Charles Garnier Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "129 HUGHSON ST S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86960774,
-    "LATITUDE": 43.25153795,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 191,
-    "NAME": "Heritage Green Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "360 ISAAC BROCK DR",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.78804944,
-    "LATITUDE": 43.19390951,
-    "WEBSITE": "http://macnabpresbyterian.ca/2014/05/12/heritage-green-presbyterian-church-new-website/"
-  },
-  {
-    //Valid
-    "ID": 192,
-    "NAME": "Jehovah's Witnesses (Glover)",
-    "DENOMINATION": "Jehovah's Witnesses",
-    "ADDRESS": "217 GLOVER RD",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.68247306,
-    "LATITUDE": 43.21181707,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 193,
-    "NAME": "Jehovah's Witnesses (Eastmount Park Congregation)",
-    "DENOMINATION": "Jehovah's Witnesses",
-    "ADDRESS": "648 LIMERIDGE RD E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85692985,
-    "LATITUDE": 43.21226487,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 194,
-    "NAME": "Church Of The Redeemer",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "25 LAKE AVE S",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.75834111,
-    "LATITUDE": 43.21527351,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 195,
-    "NAME": "Stoney Creek United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "1 KING ST W",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.75866633,
-    "LATITUDE": 43.21685978,
-    "WEBSITE": "https://stoneycreekunited.org/"
-  },
-  {
-    //Valid
-    "ID": 196,
-    "NAME": "Stoney Creek Community Church",
-    "DENOMINATION": "Community Church",
-    "ADDRESS": "725 HWY 8",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.69659728,
-    "LATITUDE": 43.2128816,
-    "WEBSITE": "http://stoney.church/"
-  },
-  {
-    //Valid
-    "ID": 197,
-    "NAME": "Hamilton Grace Mandarin Alliance Church",
-    "DENOMINATION": "Alliance",
-    "ADDRESS": "31 SUMMIT AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85189253,
-    "LATITUDE": 43.24152462,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 198,
-    "NAME": "Bethel Gospel Tabernacle",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "1355 UPPER WELLINGTON",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87686273,
-    "LATITUDE": 43.21099401,
-    "WEBSITE": "http://www.bgthamilton.com/"
-  },
-  {
-    //Valid
-    "ID": 200,
-    "NAME": "Chedoke Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "865 MOHAWK RD W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.9249732,
-    "LATITUDE": 43.23315676,
-    "WEBSITE": "http://www.chedokechurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 201,
-    "NAME": "St. Augustine Of Canterbury",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "626 UPPER WENTWORTH",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85878567,
-    "LATITUDE": 43.23189735,
-    "WEBSITE": "http://www.staugustinesparish.ca/"
-  },
-  {
-    //Valid
-    "ID": 202,
-    "NAME": "St. John's (Evangelical) Lutheran Church",
-    "DENOMINATION": "Lutheran",
-    "ADDRESS": "104 HUGHSON ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86622431,
-    "LATITUDE": 43.25918257,
-    "WEBSITE": "http://www.stjohnshamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 203,
-    "NAME": "St. Joseph's Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "260 HERKIMER ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88639242,
-    "LATITUDE": 43.25265222,
-    "WEBSITE": "https://www.stjosephhamilton.church/"
-  },
-  {
-    //Valid
-    "ID": 204,
-    "NAME": "Erskine Presbyterian Church",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "19 PEARL ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88201258,
-    "LATITUDE": 43.26118419,
-    "WEBSITE": "http://erskine.ca/wp/"
-  },
-  {
-    //Valid
-    "ID": 205,
-    "NAME": "St. Stephen On The Mount Anglican Church",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "625 CONCESSION ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84847501,
-    "LATITUDE": 43.24036505,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 206,
-    "NAME": "All Nations Full Gospel Church",
-    "DENOMINATION": "Full Gospel",
-    "ADDRESS": "1209 MAIN ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8182337,
-    "LATITUDE": 43.24243661,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 207,
-    "NAME": "Canadian Reformed Church",
+    "X": 590839.7,
+    "Y": 4789362.7,
+    "OBJECTID": 9,
+    "NAME": "First Christian Reformed Church Of Hamilton - Laotian Worshipping",
     "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "353 STONE CHURCH RD E",
+    "ADDRESS": "181 CHARLTON AVE W",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87312133,
-    "LATITUDE": 43.20750667,
-    "WEBSITE": "http://www.canrc.org/"
+    "LONGITUDE": -79.88094436,
+    "LATITUDE": 43.25159683
   },
   {
-    //Valid
-    "ID": 208,
-    "NAME": "Crossfire Assembly",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "430 YORK BLVD",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.88088674,
-    "LATITUDE": 43.26545131,
-    "WEBSITE": "http://www.crossfireassembly.com/"
-  },
-  {
-    //Valid
-    "ID": 209,
-    "NAME": "Stewart Memorial Church",
-    "DENOMINATION": "Methodist Episcopal",
-    "ADDRESS": "112 JOHN ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86476201,
-    "LATITUDE": 43.25920681,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 210,
-    "NAME": "Wentworth Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "120 WENTWORTH ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84687347,
-    "LATITUDE": 43.2559137,
-    "WEBSITE": "https://wentworthbaptist.ca/"
-  },
-  {
-    //Valid
-    "ID": 211,
-    "NAME": "First- Pilgrim United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "200 MAIN ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86173829,
-    "LATITUDE": 43.25303976,
-    "WEBSITE": "http://www.firstpilgrimuc.ca/"
-  },
-  {
-    //Valid
-    "ID": 212,
-    "NAME": "Hughson Street Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "383 HUGHSON ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86300539,
-    "LATITUDE": 43.26812358,
-    "WEBSITE": "https://www.hughson.ca/"
-  },
-  {
-    //Valid
-    "ID": 213,
-    "NAME": "St. Anthony's Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "165 PROSPECT ST N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8292796,
-    "LATITUDE": 43.254535,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 214,
-    "NAME": "Mount Hamilton Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "440 UPPER WENTWORTH",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.85605646,
-    "LATITUDE": 43.23802492,
-    "WEBSITE": "http://www.mhbc.ca/"
-  },
-  {
-    //Valid
-    "ID": 215,
-    "NAME": "St. Michael's Anglican Church",
+    "X": 591029.633,
+    "Y": 4790186.898,
+    "OBJECTID": 10,
+    "NAME": "All Saints Anglican Church",
     "DENOMINATION": "Anglican",
-    "ADDRESS": "1188 FENNELL AVE E",
+    "ADDRESS": "15 QUEEN ST S",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.82601731,
-    "LATITUDE": 43.22430333,
-    "WEBSITE": "http://www.stmichaelshamiltonmountain.com/"
+    "LONGITUDE": -79.87846883,
+    "LATITUDE": 43.25899414
   },
   {
-    //Valid
-    "ID": 216,
-    "NAME": "St. Columba Presbyterian Church",
+    "X": 588660.7702,
+    "Y": 4790506.485,
+    "OBJECTID": 11,
+    "NAME": "Mission Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "96 NORTH OVAL",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.9075977,
+    "LATITUDE": 43.2621538
+  },
+  {
+    "X": 591684.6,
+    "Y": 4789734.44,
+    "OBJECTID": 12,
+    "NAME": "St. Paul's Presbyterian Church",
     "DENOMINATION": "Presbyterian",
-    "ADDRESS": "1540 MAIN ST E",
+    "ADDRESS": "64 JAMES ST S",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80380893,
-    "LATITUDE": 43.23859172,
-    "WEBSITE": "http://stcolumbabelleville.ca/"
+    "LONGITUDE": -79.87047614,
+    "LATITUDE": 43.2548413
   },
   {
-    //Valid
-    "ID": 217,
-    "NAME": "Really Living Seventh-day Adventist Church",
-    "DENOMINATION": "Seventh Day Adventist",
-    "ADDRESS": "1763 UPPER JAMES ST",
+    "X": 591683.5,
+    "Y": 4789680.19,
+    "OBJECTID": 13,
+    "NAME": "James Street Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "96 JAMES ST S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87049872,
+    "LATITUDE": 43.25435303
+  },
+  {
+    "X": 594106.27,
+    "Y": 4788530.47,
+    "OBJECTID": 14,
+    "NAME": "Paroisse Notre-Dame Du Perpetuel Secours",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "132 BLAKE ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84085347,
+    "LATITUDE": 43.24370369
+  },
+  {
+    "X": 595161.47,
+    "Y": 4789759.13,
+    "OBJECTID": 15,
+    "NAME": "St. Vladimir Ukrainian Orthodox Church",
+    "DENOMINATION": "Ukrainian Orthodox",
+    "ADDRESS": "855 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82764663,
+    "LATITUDE": 43.25463266
+  },
+  {
+    "X": 594183.99,
+    "Y": 4789425.6,
+    "OBJECTID": 16,
+    "NAME": "East Hamilton United Pentecostal Church",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "887 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83974339,
+    "LATITUDE": 43.25175271
+  },
+  {
+    "X": 590588.6284,
+    "Y": 4790930.118,
+    "OBJECTID": 17,
+    "NAME": "Hamilton Christian Fellowship",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "137 STRATHCONA AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88377897,
+    "LATITUDE": 43.26573847
+  },
+  {
+    "X": 592958.9111,
+    "Y": 4785285.964,
+    "OBJECTID": 18,
+    "NAME": "Pilgrim Lutheran Church",
+    "DENOMINATION": "Lutheran",
+    "ADDRESS": "1054 UPPER SHERMAN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85552991,
+    "LATITUDE": 43.21463596
+  },
+  {
+    "X": 594760.85,
+    "Y": 4789295.94,
+    "OBJECTID": 19,
+    "NAME": "New Westminster Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "1025 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83266077,
+    "LATITUDE": 43.25051311
+  },
+  {
+    "X": 592823.05,
+    "Y": 4789756.92,
+    "OBJECTID": 20,
+    "NAME": "Apostolic Christian Church",
+    "DENOMINATION": "Apostolic",
+    "ADDRESS": "55 VICTORIA AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85644975,
+    "LATITUDE": 43.25490435
+  },
+  {
+    "X": 581971.46,
+    "Y": 4784680.41,
+    "OBJECTID": 21,
+    "NAME": "Bethel Baptist Church Of Ancaster",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "237 MANITOU WAY",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.99087063,
+    "LATITUDE": 43.21045715
+  },
+  {
+    "X": 595821.24,
+    "Y": 4788264.1,
+    "OBJECTID": 22,
+    "NAME": "Delta United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "47 OTTAWA ST S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.81978012,
+    "LATITUDE": 43.24108964
+  },
+  {
+    "X": 591526.95,
+    "Y": 4789598.99,
+    "OBJECTID": 23,
+    "NAME": "Macnab Street Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "116 MACNAB ST S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87244047,
+    "LATITUDE": 43.25364101
+  },
+  {
+    "X": 591729.6672,
+    "Y": 4790540.564,
+    "OBJECTID": 24,
+    "NAME": "St. Mary's Roman Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "146 PARK ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86978679,
+    "LATITUDE": 43.26209329
+  },
+  {
+    "X": 603910.18,
+    "Y": 4785911.12,
+    "OBJECTID": 25,
+    "NAME": "Stoney Creek New Testament Church Of God",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "184 MARGARET AVE",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.72061615,
+    "LATITUDE": 43.21883584
+  },
+  {
+    "X": 589839.8552,
+    "Y": 4783322.944,
+    "OBJECTID": 299,
+    "NAME": "Mount Calvary Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "1759 UPPER JAMES ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89424255,
-    "LATITUDE": 43.1973404,
-    "WEBSITE": "None"
+    "LATITUDE": 43.1973404
   },
   {
-    //Valid
-    "ID": 218,
+    "X": 593233.847,
+    "Y": 4783926.234,
+    "OBJECTID": 300,
     "NAME": "The Salvation Army - Mountain Citadel",
     "DENOMINATION": "Salvation Army",
     "ADDRESS": "835 STONE CHURCH RD E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85237524,
-    "LATITUDE": 43.20236046,
-    "WEBSITE": "https://www.salvationarmy.ca/"
+    "LATITUDE": 43.20236046
   },
   {
-    //Valid
-    "ID": 219,
+    "X": 590355.99,
+    "Y": 4789282.56,
+    "OBJECTID": 301,
     "NAME": "Melrose United Church",
     "DENOMINATION": "United",
     "ADDRESS": "86 HOMEWOOD AVE",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88691523,
-    "LATITUDE": 43.25093347,
-    "WEBSITE": "http://www.melroseunited.ca/"
+    "LATITUDE": 43.25093347
   },
   {
-    //Valid
-    "ID": 220,
+    "X": 591121.3872,
+    "Y": 4784748.343,
+    "OBJECTID": 302,
     "NAME": "Mount Hamilton Christian Reformed Church",
     "DENOMINATION": "Christian Reformed",
     "ADDRESS": "1415 UPPER WELLINGTON",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87823714,
-    "LATITUDE": 43.2100198,
-    "WEBSITE": "http://www.mthamiltoncrc.org/"
+    "LATITUDE": 43.2100198
   },
   {
-    //Valid
-    "ID": 221,
+    "X": 597922.63,
+    "Y": 4785755.14,
+    "OBJECTID": 303,
     "NAME": "St. Luke's Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "200 MOUNT ALBION RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.79434844,
-    "LATITUDE": 43.21823222,
-    "WEBSITE": "http://www.stlukerchamilton.org/"
+    "LATITUDE": 43.21823222
   },
   {
-    //Valid
-    "ID": 222,
+    "X": 591776.89,
+    "Y": 4789145.83,
+    "OBJECTID": 304,
     "NAME": "Church Of The Ascension",
     "DENOMINATION": "Anglican",
     "ADDRESS": "64 FOREST AV",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86943742,
-    "LATITUDE": 43.24953085,
-    "WEBSITE": "http://ascensionchurch.ca/"
+    "LATITUDE": 43.24953085
   },
   {
-    //Valid
-    "ID": 223,
-    "NAME": "Faith Baptist Church",
-    "DENOMINATION": "Baptist",
+    "X": 598178.19,
+    "Y": 4788011.56,
+    "OBJECTID": 305,
+    "NAME": "Victory International Church",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
     "ADDRESS": "92 PARKDALE AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.79080106,
-    "LATITUDE": 43.23851294,
-    "WEBSITE": "http://www.victoryinternational.church/"
+    "LATITUDE": 43.23851294
   },
   {
-    //Valid
-    "ID": 225,
+    "X": 593962.44,
+    "Y": 4787565.7,
+    "OBJECTID": 306,
+    "NAME": "Jesus Is Alive Community",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "97 EAST 33RD ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84278914,
+    "LATITUDE": 43.23503593
+  },
+  {
+    "X": 592455.8296,
+    "Y": 4791545.41,
+    "OBJECTID": 307,
     "NAME": "Welcome Inn Community Centre And Church",
     "DENOMINATION": "Mennonite Brethren",
     "ADDRESS": "40 WOOD ST E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86067265,
-    "LATITUDE": 43.27105107,
-    "WEBSITE": "http://welcomeinn.ca/"
+    "LATITUDE": 43.27105107
   },
   {
-    //Valid
-    "ID": 226,
-    "NAME": "Westdale Reformed Church",
+    "X": 589589.35,
+    "Y": 4791381.82,
+    "OBJECTID": 308,
+    "NAME": "First Reformed Church",
     "DENOMINATION": "Reformed",
     "ADDRESS": "201 PARADISE RD N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89601619,
-    "LATITUDE": 43.26992461,
-    "WEBSITE": "http://www.firsthamilton.ca/"
+    "LATITUDE": 43.26992461
   },
   {
-    //Value
-    "ID": 227,
+    "X": 588328.09,
+    "Y": 4779091.46,
+    "OBJECTID": 309,
     "NAME": "Mount Hope United Church",
     "DENOMINATION": "United",
     "ADDRESS": "3076 HOMESTEAD DR",
     "COMMUNITY": "GLANBROOK",
     "LONGITUDE": -79.91352194,
-    "LATITUDE": 43.15942188,
-    "WEBSITE": "None"
+    "LATITUDE": 43.15942188
   },
   {
-    //Valid
-    "ID": 228,
+    "X": 596802.23,
+    "Y": 4788326.13,
+    "OBJECTID": 310,
     "NAME": "Garside Bible Church",
     "DENOMINATION": "Associated Gospel Churches",
     "ADDRESS": "47 GARSIDE AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.80768904,
-    "LATITUDE": 43.2415228,
-    "WEBSITE": "http://www.garsidebiblechurch.com/"
+    "LATITUDE": 43.2415228
   },
   {
-    //Valid
-    "ID": 229,
+    "X": 592565.11,
+    "Y": 4786860.39,
+    "OBJECTID": 311,
     "NAME": "Hill Park Bible Church",
     "DENOMINATION": "Associated Gospel Churches",
     "ADDRESS": "668 UPPER WENTWORTH",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.8601132,
-    "LATITUDE": 43.22885884,
-    "WEBSITE": "https://hillparkbc.wordpress.com/"
+    "LATITUDE": 43.22885884
   },
   {
-    //Valid
-    "ID": 230,
+    "X": 592642.9076,
+    "Y": 4791319.186,
+    "OBJECTID": 312,
     "NAME": "St. Lawrences Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "475 MARY ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85840582,
-    "LATITUDE": 43.26899142,
-    "WEBSITE": "http://stlawrencehamilton.ca/"
+    "LATITUDE": 43.26899142
   },
   {
-    //Valid
-    "ID": 232,
+    "X": 581753.21,
+    "Y": 4785144.44,
+    "OBJECTID": 313,
+    "NAME": "Calvary Pentecostal Tabernacle",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "125 WILSON ST W",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.99348833,
+    "LATITUDE": 43.21465865
+  },
+  {
+    "X": 595234.42,
+    "Y": 4789666.94,
+    "OBJECTID": 314,
     "NAME": "Holy Trinity Polish Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "880 BARTON ST E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.82676403,
-    "LATITUDE": 43.25379348,
-    "WEBSITE": "http://hamilton2017.pnkk.ca/"
+    "LATITUDE": 43.25379348
   },
   {
-    //Valid
-    "ID": 233,
+    "X": 595224.9,
+    "Y": 4789577.16,
+    "OBJECTID": 315,
     "NAME": "Bethany Gospel Chapel",
     "DENOMINATION": "Other",
     "ADDRESS": "155 GAGE AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.82689681,
-    "LATITUDE": 43.25298641,
-    "WEBSITE": "http://www.bethanychapel.ca/"
+    "LATITUDE": 43.25298641
   },
   {
-    //Valid
-    "ID": 234,
+    "X": 587702.6428,
+    "Y": 4789136.924,
+    "OBJECTID": 316,
     "NAME": "Church Of God (German)",
     "DENOMINATION": "Pentecostal",
     "ADDRESS": "265 BOWMAN ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.91961889,
-    "LATITUDE": 43.24993564,
-    "WEBSITE": "http://www.thechurchofgod.cc/"
+    "LATITUDE": 43.24993564
   },
   {
-    //Valid
-    "ID": 235,
+    "X": 588368.91,
+    "Y": 4787128.41,
+    "OBJECTID": 317,
     "NAME": "St. Andrews United Church",
     "DENOMINATION": "United",
     "ADDRESS": "479 UPPER PARADISE RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.91173473,
-    "LATITUDE": 43.23177503,
-    "WEBSITE": "http://www.standrewsunitedhamilton.ca/"
+    "LATITUDE": 43.23177503
   },
   {
-    //Valid
-    "ID": 236,
+    "X": 594089.5809,
+    "Y": 4786780.428,
+    "OBJECTID": 318,
     "NAME": "Blessed Sacrament Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "305 EAST 37TH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.84135758,
-    "LATITUDE": 43.22795036,
-    "WEBSITE": "http://www.blessedsacramenthamilton.com/"
+    "LATITUDE": 43.22795036
   },
   {
-    //Valid
-    "ID": 237,
+    "X": 588447.8439,
+    "Y": 4790329.856,
+    "OBJECTID": 319,
     "NAME": "St. Paul's Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "1140 KING ST W",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.9102491,
-    "LATITUDE": 43.26058862,
-    "WEBSITE": "https://stpaulswestdale.wordpress.com/"
+    "LATITUDE": 43.26058862
   },
   {
-    //Valid
-    "ID": 238,
+    "X": 590044.3,
+    "Y": 4790012.23,
+    "OBJECTID": 320,
     "NAME": "First Unitarian Church Of Hamilton",
-    "DENOMINATION": "Universalist",
+    "DENOMINATION": "Unitarian Universalist",
     "ADDRESS": "170 DUNDURN ST S",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.89063494,
-    "LATITUDE": 43.25753998,
-    "WEBSITE": "https://uuhamilton.ca/"
+    "LATITUDE": 43.25753998
   },
   {
-    //Valid
-    "ID": 239,
+    "X": 591594.887,
+    "Y": 4790287.082,
+    "OBJECTID": 321,
     "NAME": "Philpott Memorial Church",
     "DENOMINATION": "Associated Gospel Churches",
     "ADDRESS": "84 YORK BLVD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87148928,
-    "LATITUDE": 43.25982761,
-    "WEBSITE": "https://www.acommunityofgrace.org/"
+    "LATITUDE": 43.25982761
   },
   {
-    //Valid
-    "ID": 240,
+    "X": 588428.1571,
+    "Y": 4789890.098,
+    "OBJECTID": 322,
     "NAME": "Adas Israel Synagogue",
     "DENOMINATION": "Jewish (Orthodox)",
     "ADDRESS": "125 CLINE AVE S",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.91056221,
-    "LATITUDE": 43.25663177,
-    "WEBSITE": "http://www.adasisrael.ca/"
+    "LATITUDE": 43.25663177
   },
   {
-    //Valid
-    "ID": 241,
+    "X": 575404.893,
+    "Y": 4782017.467,
+    "OBJECTID": 323,
     "NAME": "Alberton Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "528 ALBERTON RD",
     "COMMUNITY": "ANCASTER",
     "LONGITUDE": -80.07206251,
-    "LATITUDE": 43.18716557,
-    "WEBSITE": "http://www.albertonchurch.ca"
+    "LATITUDE": 43.18716557
   },
   {
-    //Valid
-    "ID": 242,
-    "NAME": "Apostolic Christian Church",
-    "DENOMINATION": "Apostolic",
-    "ADDRESS": "91 CARRINGTON CRT",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.99051837,
-    "LATITUDE": 43.21436897,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 243,
-    "NAME": "Ancaster Canadian Reformed Church",
-    "DENOMINATION": "Reformed",
-    "ADDRESS": "575 SHAVER RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -80.01108491,
-    "LATITUDE": 43.19563179,
-    "WEBSITE": "https://ancasterchurch.on.ca/"
-  },
-  {
-    //Valid
-    "ID": 244,
-    "NAME": "Ancaster Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "70 GARNER RD E",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.97875846,
-    "LATITUDE": 43.20146614,
-    "WEBSITE": "http://www.ancastercrc.org/"
-  },
-  {
-    //Valid
-    "ID": 246,
-    "NAME": "Anglican Church Of Canada",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "252 JAMES ST N",
+    "X": 596390.95,
+    "Y": 4788208.32,
+    "OBJECTID": 127,
+    "NAME": "Redeemer Lutheran Church",
+    "DENOMINATION": "Lutheran",
+    "ADDRESS": "15 WEXFORD AVE S",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86571884,
-    "LATITUDE": 43.26315212,
-    "WEBSITE": "https://www.anglican.ca/"
+    "LONGITUDE": -79.81277429,
+    "LATITUDE": 43.24051486
   },
   {
-    //Valid
-    "ID": 247,
-    "NAME": "Baha'i Fireside",
-    "DENOMINATION": "Baha'I",
-    "ADDRESS": "132 HILLCREST AVE",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.98851504,
-    "LATITUDE": 43.26873588,
-    "WEBSITE": "www.bahaihamilton.org/"
-  },
-  {
-    //Valid
-    "ID": 248,
-    "NAME": "Beth Jacob Synagogue",
-    "DENOMINATION": "Jewish (Conservative)",
-    "ADDRESS": "375 ABERDEEN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.89013288,
-    "LATITUDE": 43.24991573,
-    "WEBSITE": "https://www.bethjacobsynagogue.ca/"
-  },
-  {
-    //Valid
-    "ID": 249,
-    "NAME": "Calvin Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "420 HWY 5 W",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.966091,
-    "LATITUDE": 43.297692,
-    "WEBSITE": "https://dundascalvin.ca/"
-  },
-  {
-    //Valid
-    "ID": 250,
-    "NAME": "Canterbury Hills Conference Centre",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "509 LIONS CLUB RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.97812222,
-    "LATITUDE": 43.24077112,
-    "WEBSITE": "http://www.canterburyhills.ca/"
-  },
-  {
-    //Valid
-    "ID": 251,
-    "NAME": "Carlisle United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "1432 CENTRE RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.976848,
-    "LATITUDE": 43.391865,
-    "WEBSITE": "http://carlisleuc.ca/"
-  },
-  {
-    //Valid
-    "ID": 252,
-    "NAME": "Cathedral Of Christ The King",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "714 KING ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.89127853,
-    "LATITUDE": 43.26353577,
-    "WEBSITE": "http://ctkbasilica.ca/"
-  },
-  {
-    //Valid
-    "ID": 253,
-    "NAME": "Christ Church (Dundas)",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "95 HWY 8",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.989774,
-    "LATITUDE": 43.275906,
-    "WEBSITE": "https://niagaraanglican.ca/parish/christ-church-flamborough"
-  },
-  {
-    //Valid
-    "ID": 254,
-    "NAME": "Christ Church Anglican",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "1307 WOODBURN RD",
-    "COMMUNITY": "GLANBROOK",
-    "LONGITUDE": -79.74247839,
-    "LATITUDE": 43.13717243,
-    "WEBSITE": "https://cathedralhamilton.ca/"
-  },
-  {
-    //Valid
-    "ID": 255,
-    "NAME": "Christadelphian Ecclesia Church (Hamilton)",
-    "DENOMINATION": "Christadelphian",
-    "ADDRESS": "80 EWEN RD",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.9313458,
-    "LATITUDE": 43.25378418,
-    "WEBSITE": "http://www.christadelphia.org/ecclesialist.php?ON"
-  },
-  {
-    //Valid
-    "ID": 258,
-    "NAME": "Dundas Baptist Church (Governors)",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "201 GOVERNORS RD",
-    "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.96253092,
-    "LATITUDE": 43.26188766,
-    "WEBSITE": "http://www.dundasbaptistchurch.com/"
-  },
-  {
-    //Valid
-    "ID": 260,
-    "NAME": "Eckankar The Ancient Science Of Travel",
-    "DENOMINATION": "Spiritualists",
-    "ADDRESS": "178 KING ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87446823,
-    "LATITUDE": 43.25838099,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 261,
-    "NAME": "Fellowship Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "107 BRAITHWAITE AVE",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.98822258,
-    "LATITUDE": 43.20318403,
-    "WEBSITE": "http://www.meadowlandsfellowship.com/"
-  },
-  {
-    //Valid
-    "ID": 262,
-    "NAME": "Freelton Fellowship Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "12 LOUISA ST",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.03735758,
-    "LATITUDE": 43.39840481,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 263,
-    "NAME": "Freelton United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "155 FREELTON RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.04035208,
-    "LATITUDE": 43.40101224,
-    "WEBSITE": "https://freeltonandstrabaneunitedchurch.org/"
-  },
-  {
-    //Valid
-    "ID": 264,
-    "NAME": "Grace Anglican Church (Waterdown)",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "1401 KING ST E",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.8970098,
-    "LATITUDE": 43.33767437,
-    "WEBSITE": "http://www.graceanglicanwaterdown.org/"
-  },
-  {
-    //Valid
-    "ID": 265,
-    "NAME": "Grindstone Valley Bible Church",
-    "DENOMINATION": "Other",
-    "ADDRESS": "215 PARKSIDE DR",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.91050553,
-    "LATITUDE": 43.33529422,
-    "WEBSITE": "http://www.grindstonechurch.com/"
-  },
-  {
-    //Valid
-    "ID": 266,
-    "NAME": "Heritage Fellowship Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "557 GARNER RD W",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -80.00833953,
-    "LATITUDE": 43.1979545,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 267,
-    "NAME": "Holy Family Catholic Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "1393 CANNON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.80809317,
-    "LATITUDE": 43.24556767,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 268,
-    "NAME": "Holy Veil Of Holy Mother Russian Orthodox Church",
+    "X": 598304.09,
+    "Y": 4787866.47,
+    "OBJECTID": 128,
+    "NAME": "St. Mark's Syrian Orthodox Church",
     "DENOMINATION": "Orthodox",
-    "ADDRESS": "75 SANFORD AVE S",
+    "ADDRESS": "1202 DUNSMURE RD",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84718113,
-    "LATITUDE": 43.24917431,
-    "WEBSITE": "http://pokrovchurch.ca/home/"
+    "LONGITUDE": -79.78927663,
+    "LATITUDE": 43.23719034
   },
   {
-    //Valid
-    "ID": 269,
-    "NAME": "Jerseyville Baptist Church",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "3203 JERSEYVILLE RD W",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -80.13316795,
-    "LATITUDE": 43.19599529,
-    "WEBSITE": "https://jerseyvillebaptist.weebly.com/"
-  },
-  {
-    //Valid
-    "ID": 270,
-    "NAME": "United Church (Jerseyville)",
-    "DENOMINATION": "United",
-    "ADDRESS": "15 FIELD RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -80.10393879,
-    "LATITUDE": 43.2010447,
-    "WEBSITE": "http://jerseyvilleunitedchurch.com/"
-  },
-  {
-    //Valid
-    "ID": 271,
-    "NAME": "Knox Presbyterian Church (Dundas)",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "23 MELVILLE ST",
-    "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.954904,
-    "LATITUDE": 43.26858739,
-    "WEBSITE": "http://knoxdundas.com/"
-  },
-  {
-    //Valid
-    "ID": 272,
-    "NAME": "Knox Presbyterian Church (Waterdown)",
-    "DENOMINATION": "Presbyterian",
-    "ADDRESS": "80 MILL ST N",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.89385798,
-    "LATITUDE": 43.33623086,
-    "WEBSITE": "http://www.knoxwaterdown.ca/"
-  },
-  {
-    //Valid
-    "ID": 273,
-    "NAME": "Linden Park Community Church",
-    "DENOMINATION": "Community Church",
-    "ADDRESS": "484 EAST 16TH ST",
+    "X": 595962.4509,
+    "Y": 4789013.149,
+    "OBJECTID": 129,
+    "NAME": "The Apostolic Holiness Church",
+    "DENOMINATION": "Apostolic",
+    "ADDRESS": "185 OTTAWA ST N",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86541765,
-    "LATITUDE": 43.22753384,
-    "WEBSITE": "http://lindenparkchurch.ca/"
+    "LONGITUDE": -79.81791081,
+    "LATITUDE": 43.24781521
   },
   {
-    //Valid
-    "ID": 275,
-    "NAME": "Macneill Memorial Baptist Church (Ancaster)",
-    "DENOMINATION": "Baptist",
-    "ADDRESS": "1114 OLD MOHAWK RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.93909057,
-    "LATITUDE": 43.23185698,
-    "WEBSITE": "http://www.macneillbaptist.ca/"
+    "X": 598266.11,
+    "Y": 4787737.27,
+    "OBJECTID": 130,
+    "NAME": "Faith Church Of Jesus Christ",
+    "DENOMINATION": "Church of Jesus Christ",
+    "ADDRESS": "1855 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.78976732,
+    "LATITUDE": 43.23603214
   },
   {
-    //Valid
-    "ID": 276,
-    "NAME": "Marshall Memorial United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "184 FIDDLERS GREEN RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.98688888,
-    "LATITUDE": 43.21358804,
-    "WEBSITE": "http://www.mmuc.org/"
-  },
-  {
-    //Valid
-    "ID": 278,
-    "NAME": "Millgrove United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "374 5TH CON RD W",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.95945888,
-    "LATITUDE": 43.33562396,
-    "WEBSITE": "http://millgroveunitedchurch.com/"
-  },
-  {
-    //Valid
-    "ID": 279,
-    "NAME": "Providence Canadian Reformed Church",
-    "DENOMINATION": "Reformed",
-    "ADDRESS": "682 SOUTHCOTE RD",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.95783667,
-    "LATITUDE": 43.20418291,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 280,
-    "NAME": "Life Community Church",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "165 KING ST W",
-    "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.96072939,
-    "LATITUDE": 43.26724639,
-    "WEBSITE": "http://www.lifecommunitychurch.ca/"
-  },
-  {
-    //Valid
-    "ID": 281,
-    "NAME": "New Hope Christian Centre",
-    "DENOMINATION": "Non-denominational",
-    "ADDRESS": "176 HWY 8",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.0078855,
-    "LATITUDE": 43.27319035,
-    "WEBSITE": "http://www.newhopechristiancentre.ca/"
-  },
-  {
-    //Valid
-    "ID": 282,
-    "NAME": "Our Lady Of Mount Carmel Roman Catholic Church",
+    "X": 589501.4111,
+    "Y": 4786246.291,
+    "OBJECTID": 131,
+    "NAME": "Annunciation Of Our Lord",
     "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "55 FREELTON RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.036379,
-    "LATITUDE": 43.399141,
-    "WEBSITE": "None"
-  },  
-  {
-    //Valid
-    "ID": 284,
-    "NAME": "Rock Chapel United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "451 ROCK CHAPEL RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.93511405,
-    "LATITUDE": 43.30088738,
-    "WEBSITE": "http://rockchapel.webs.com/"
+    "ADDRESS": "280 LIMERIDGE RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.89793357,
+    "LATITUDE": 43.22369974
   },
   {
-    //Valid
-    "ID": 285,
-    "NAME": "Ryerson United Church (Ancaster)",
-    "DENOMINATION": "United",
-    "ADDRESS": "265 WILSON ST E",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.97798157,
-    "LATITUDE": 43.22464326,
-    "WEBSITE": "http://ryersonancaster.ca/"
+    "X": 596620.24,
+    "Y": 4789166.94,
+    "OBJECTID": 132,
+    "NAME": "Ellis Avenue Bible Church",
+    "DENOMINATION": "Associated Gospel Churches",
+    "ADDRESS": "80 ELLIS AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80978275,
+    "LATITUDE": 43.24911575
   },
   {
-    //Valid
-    "ID": 286,
+    "X": 599778.72,
+    "Y": 4788061.82,
+    "OBJECTID": 133,
+    "NAME": "Incarnation Of Our Blessed Lord",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "400 POTTRUFF RD N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.77108365,
+    "LATITUDE": 43.23875537
+  },
+  {
+    "X": 603347.22,
+    "Y": 4786042.17,
+    "OBJECTID": 134,
+    "NAME": "Church Of Jesus Christ Of Latter-Day Saints",
+    "DENOMINATION": "Jesus Christ of Latter-Day Saints",
+    "ADDRESS": "345 HWY 8",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.72752132,
+    "LATITUDE": 43.22009292
+  },
+  {
+    "X": 592138.17,
+    "Y": 4789420.19,
+    "OBJECTID": 135,
+    "NAME": "Church Of God 7th Day",
+    "DENOMINATION": "Other",
+    "ADDRESS": "140 HUNTER ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86494193,
+    "LATITUDE": 43.25195683
+  },
+  {
+    "X": 592733.86,
+    "Y": 4784091.95,
+    "OBJECTID": 136,
+    "NAME": "Church Of Jesus Christ Of Latter-Day Saints",
+    "DENOMINATION": "Jesus Christ of Latter-Day Saints",
+    "ADDRESS": "701 STONE CHURCH RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85850061,
+    "LATITUDE": 43.20391397
+  },
+  {
+    "X": 592553.56,
+    "Y": 4790406.31,
+    "OBJECTID": 137,
+    "NAME": "Wesley Urban Ministries Inc.",
+    "DENOMINATION": "Other",
+    "ADDRESS": "195 FERGUSON AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85966003,
+    "LATITUDE": 43.26078388
+  },
+  {
+    "X": 594763.6252,
+    "Y": 4785263.439,
+    "OBJECTID": 138,
+    "NAME": "Emmanuel United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "871 UPPER OTTAWA ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83331939,
+    "LATITUDE": 43.21420876
+  },
+  {
+    "X": 591222.56,
+    "Y": 4787173.63,
+    "OBJECTID": 139,
+    "NAME": "Southgate Presbyterian",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "120 CLARENDON",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.876591,
+    "LATITUDE": 43.23184246
+  },
+  {
+    "X": 599472.26,
+    "Y": 4786625.45,
+    "OBJECTID": 140,
+    "NAME": "Eastgate Christian Fellowship",
+    "DENOMINATION": "Other",
+    "ADDRESS": "105 NASH RD S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.77511633,
+    "LATITUDE": 43.2258647
+  },
+  {
+    "X": 594293.1,
+    "Y": 4786215,
+    "OBJECTID": 141,
+    "NAME": "Eastmount Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "720 NINTH AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83894853,
+    "LATITUDE": 43.22283448
+  },
+  {
+    "X": 594471.1832,
+    "Y": 4788830.52,
+    "OBJECTID": 142,
+    "NAME": "Ryerson United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "842 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83630817,
+    "LATITUDE": 43.24635937
+  },
+  {
+    "X": 592393.42,
+    "Y": 4787663.47,
+    "OBJECTID": 143,
+    "NAME": "Panagia Greek Orthodox Church Of The Dormition Of",
+    "DENOMINATION": "Orthodox",
+    "ADDRESS": "233 EAST 15TH ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86209254,
+    "LATITUDE": 43.23610997
+  },
+  {
+    "X": 577345.2,
+    "Y": 4809573.26,
+    "OBJECTID": 144,
+    "NAME": "Mountsberg Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "241 CAMPBELLVILLE RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.0443084,
+    "LATITUDE": 43.43506386
+  },
+  {
+    "X": 596661.27,
+    "Y": 4787294.89,
+    "OBJECTID": 145,
+    "NAME": "St. Mary's Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "1831 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80960563,
+    "LATITUDE": 43.23225686
+  },
+  {
+    "X": 589249.0235,
+    "Y": 4787023.957,
+    "OBJECTID": 146,
+    "NAME": "St. Bartholomew's Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "435 MOHAWK RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90091496,
+    "LATITUDE": 43.23073102
+  },
+  {
+    "X": 598334.0833,
+    "Y": 4782965.588,
+    "OBJECTID": 147,
+    "NAME": "Heritage Green Seventh-Day Adventist Church",
+    "DENOMINATION": "Seventh Day Adventist",
+    "ADDRESS": "349 ISAAC BROCK DR",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.78978025,
+    "LATITUDE": 43.19306507
+  },
+  {
+    "X": 596785.13,
+    "Y": 4787280.25,
+    "OBJECTID": 148,
+    "NAME": "Holy Cross Croatian Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "1883 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80808317,
+    "LATITUDE": 43.23210918
+  },
+  {
+    "X": 597092.19,
+    "Y": 4783555.94,
+    "OBJECTID": 149,
+    "NAME": "Mount Albion Pentecostal Church",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "1267 PARAMOUNT DR",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.80495751,
+    "LATITUDE": 43.19854055
+  },
+  {
+    "X": 591295.5524,
+    "Y": 4790799.235,
+    "OBJECTID": 150,
+    "NAME": "Hess St Baptist Mission",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "179 HESS ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87509168,
+    "LATITUDE": 43.26447482
+  },
+  {
+    "X": 594841.38,
+    "Y": 4790002.99,
+    "OBJECTID": 151,
+    "NAME": "St. Shmooni Church",
+    "DENOMINATION": "Other",
+    "ADDRESS": "100 CLINTON ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83154723,
+    "LATITUDE": 43.25686843
+  },
+  {
+    "X": 596869.2708,
+    "Y": 4787259.76,
+    "OBJECTID": 152,
+    "NAME": "Faith Lutheran Church",
+    "DENOMINATION": "Lutheran",
+    "ADDRESS": "1907 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80705079,
+    "LATITUDE": 43.23191392
+  },
+  {
+    "X": 597046.9865,
+    "Y": 4787130.39,
+    "OBJECTID": 153,
+    "NAME": "Pioneer Memorial United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "1974 KING ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80488544,
+    "LATITUDE": 43.23072638
+  },
+  {
+    "X": 595568,
+    "Y": 4789896.69,
+    "OBJECTID": 154,
+    "NAME": "Fah Hoy Temple",
+    "DENOMINATION": "Buddhist",
+    "ADDRESS": "29 LINDEN ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82261551,
+    "LATITUDE": 43.25581965
+  },
+  {
+    "X": 590953.9288,
+    "Y": 4785664.299,
+    "OBJECTID": 155,
+    "NAME": "Mountain View Christian Church",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "118 LIMERIDGE RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88014738,
+    "LATITUDE": 43.21828638
+  },
+  {
+    "X": 592739.9,
+    "Y": 4789637.04,
+    "OBJECTID": 156,
+    "NAME": "West Avenue Christadelphian Church",
+    "DENOMINATION": "Christadelphian",
+    "ADDRESS": "20 WEST AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85749411,
+    "LATITUDE": 43.25383532
+  },
+  {
+    "X": 586563.972,
+    "Y": 4789237.575,
+    "OBJECTID": 157,
+    "NAME": "Quakers The Religious Society Of Friends",
+    "DENOMINATION": "Religious Society of Friends",
+    "ADDRESS": "7 BUTTY PL",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.93362761,
+    "LATITUDE": 43.25097343
+  },
+  {
+    "X": 597043.0814,
+    "Y": 4782959.222,
+    "OBJECTID": 158,
     "NAME": "The Salvation Army - Winter Berry Heights Church",
     "DENOMINATION": "Salvation Army",
     "ADDRESS": "300 WINTERBERRY DR",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.80566661,
-    "LATITUDE": 43.19317472,
-    "WEBSITE": "https://www.salvationarmy.ca/"
+    "LATITUDE": 43.19317472
   },
   {
-    //Valid
-    "ID": 288,
+    "X": 591015.9526,
+    "Y": 4790739.808,
+    "OBJECTID": 159,
+    "NAME": "The Salvation Army - Ontario South Divisional Headquarters",
+    "DENOMINATION": "Salvation Army",
+    "ADDRESS": "340 YORK BLVD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87854598,
+    "LATITUDE": 43.26397362
+  },
+  {
+    "X": 582978.5124,
+    "Y": 4786487.142,
+    "OBJECTID": 160,
     "NAME": "St. Andrews Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "31 SULPHUR SPRINGS",
     "COMMUNITY": "ANCASTER",
     "LONGITUDE": -79.97820338,
-    "LATITUDE": 43.2266137,
-    "WEBSITE": "http://standrews.ws/"
+    "LATITUDE": 43.2266137
   },
   {
-    //Valid
-    "ID": 289,
+    "X": 582200.1799,
+    "Y": 4785525.053,
+    "OBJECTID": 161,
     "NAME": "St. Ann's Church (Ancaster)",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "40 FIDDLERS GREEN RD",
     "COMMUNITY": "ANCASTER",
     "LONGITUDE": -79.98792959,
-    "LATITUDE": 43.21803689,
-    "WEBSITE": "http://www.stannsparish.ca/"
+    "LATITUDE": 43.21803689
   },
   {
-    //Valid
-    "ID": 290,
+    "X": 584292.4864,
+    "Y": 4791273.473,
+    "OBJECTID": 162,
     "NAME": "St. James Anglican Church (Dundas)",
     "DENOMINATION": "Anglican",
     "ADDRESS": "110 VICTORIA ST",
     "COMMUNITY": "DUNDAS",
     "LONGITUDE": -79.96129365,
-    "LATITUDE": 43.26956042,
-    "WEBSITE": "https://stjamesdundas.ca/"
+    "LATITUDE": 43.26956042
   },
   {
-    //Valid
-    "ID": 291,
+    "X": 589123.1484,
+    "Y": 4799065.007,
+    "OBJECTID": 163,
     "NAME": "St. James United Church (Waterdown)",
     "DENOMINATION": "United",
     "ADDRESS": "306 PARKSIDE DR",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -79.90051396,
-    "LATITUDE": 43.33915126,
-    "WEBSITE": "http://www.stjameswaterdown.ca/"
+    "LATITUDE": 43.33915126
   },
   {
-    //Valid
-    "ID": 292,
+    "X": 594304.6181,
+    "Y": 4787265.68,
+    "OBJECTID": 164,
     "NAME": "St. John United Church",
     "DENOMINATION": "United",
     "ADDRESS": "910 QUEENSDALE AVE E",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.83862714,
-    "LATITUDE": 43.23229218,
-    "WEBSITE": "http://www.stjohnuc.ca/"
+    "LATITUDE": 43.23229218
   },
   {
-    //Valid
-    "ID": 293,
+    "X": 583041.223,
+    "Y": 4786213.67,
+    "OBJECTID": 165,
     "NAME": "St. John's Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "260 WILSON ST E",
     "COMMUNITY": "ANCASTER",
     "LONGITUDE": -79.97747244,
-    "LATITUDE": 43.22414465,
-    "WEBSITE": "http://www.ancasteranglican.org/"
+    "LATITUDE": 43.22414465
   },
   {
-    //Valid
-    "ID": 294,
+    "X": 592508.6361,
+    "Y": 4791415.341,
+    "OBJECTID": 166,
     "NAME": "St. Luke's Anglican Church",
     "DENOMINATION": "Anglican",
     "ADDRESS": "454 JOHN ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.8600439,
-    "LATITUDE": 43.26987359,
-    "WEBSITE": "None"
+    "LATITUDE": 43.26987359
   },
   {
-    //Valid
-    "ID": 295,
+    "X": 583677.6615,
+    "Y": 4790147.383,
+    "OBJECTID": 167,
     "NAME": "St. Mark's United Church (Dundas)",
     "DENOMINATION": "United",
     "ADDRESS": "1 LYNNDALE DR",
     "COMMUNITY": "DUNDAS",
     "LONGITUDE": -79.96903983,
-    "LATITUDE": 43.25949054,
-    "WEBSITE": "http://www.stmarksunitedchurch.ca/"
+    "LATITUDE": 43.25949054
   },
   {
-    //Valid
-    "ID": 296,
+    "X": 590407.7989,
+    "Y": 4786767.928,
+    "OBJECTID": 168,
     "NAME": "St. Michael's Hungarian Greek Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "525 WEST 5TH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.88668944,
-    "LATITUDE": 43.22828801,
-    "WEBSITE": "None"
+    "LATITUDE": 43.22828801
   },
   {
-    //Valid
-    "ID": 297,
+    "X": 582182.7238,
+    "Y": 4777310.467,
+    "OBJECTID": 169,
     "NAME": "St. Paul's Presbyterian Church (Ancaster)",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "526 CARLUKE RD W",
     "COMMUNITY": "ANCASTER",
     "LONGITUDE": -79.98936522,
-    "LATITUDE": 43.14407959,
-    "WEBSITE": "None"
+    "LATITUDE": 43.14407959
   },
   {
-    //Valid
-    "ID": 298,
+    "X": 584897.4838,
+    "Y": 4791050.79,
+    "OBJECTID": 170,
     "NAME": "St. Paul's United Church (Dundas)",
     "DENOMINATION": "United",
     "ADDRESS": "29 PARK ST W",
     "COMMUNITY": "DUNDAS",
     "LONGITUDE": -79.95387404,
-    "LATITUDE": 43.26748764,
-    "WEBSITE": "https://stpaulsdundas.com/"
+    "LATITUDE": 43.26748764
   },
   {
-    //Valid
-    "ID": 299,
-    "NAME": "Carisma Pentecostal Church",
-    "DENOMINATION": "Pentecostal",
+    "X": 592622.92,
+    "Y": 4789472.179,
+    "OBJECTID": 171,
+    "NAME": "St. Thomas Anglican Church",
+    "DENOMINATION": "Anglican",
     "ADDRESS": "16 WEST AVE S",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85896268,
-    "LATITUDE": 43.25236548,
-    "WEBSITE": "None"
+    "LATITUDE": 43.25236548
   },
   {
-    //Valid
-    "ID": 300,
+    "X": 589756.6907,
+    "Y": 4798241.658,
+    "OBJECTID": 172,
     "NAME": "St. Thomas Roman Catholic Church",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "46 FLAMBORO ST",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -79.89283426,
-    "LATITUDE": 43.33166336,
-    "WEBSITE": "http://www.stthomaswaterdown.com/"
+    "LATITUDE": 43.33166336
   },
   {
-    //Valid
-    "ID": 301,
-    "NAME": "Canadian Reformed Theological Seminary",
+    "X": 588719.6843,
+    "Y": 4787937.188,
+    "OBJECTID": 173,
+    "NAME": "Theological College Of The Canadian Reformed Churches",
     "DENOMINATION": "Reformed",
     "ADDRESS": "110 WEST 27TH ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.9072856,
-    "LATITUDE": 43.23901534,
-    "WEBSITE": "http://www.canadianreformedseminary.ca/"
+    "LATITUDE": 43.23901534
   },
   {
-    //Valid
-    "ID": 302,
+    "X": 580056.1622,
+    "Y": 4803716.57,
+    "OBJECTID": 174,
     "NAME": "United Church Of Canada (Carlisle)",
     "DENOMINATION": "United",
     "ADDRESS": "1552 HWY 6",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -80.01167384,
-    "LATITUDE": 43.38205065,
-    "WEBSITE": "http://carlisleuc.ca/"
+    "LATITUDE": 43.38205065
   },
   {
-    //Valid
-    "ID": 303,
+    "X": 586695.7372,
+    "Y": 4789778.868,
+    "OBJECTID": 175,
     "NAME": "United Hebrew Memorial Chapel",
     "DENOMINATION": "United",
     "ADDRESS": "28 EWEN RD",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.93191951,
-    "LATITUDE": 43.25583161,
-    "WEBSITE": "http://uhmc.ca/"
+    "LATITUDE": 43.25583161
   },
   {
-    //Valid
-    "ID": 306,
+    "X": 570272.4592,
+    "Y": 4803406.987,
+    "OBJECTID": 176,
+    "NAME": "Valens Gospel Hall",
+    "DENOMINATION": "Brethren",
+    "ADDRESS": "1774 VALENS RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.13248287,
+    "LATITUDE": 43.3802433
+  },
+  {
+    "X": 591678.6543,
+    "Y": 4786905.116,
+    "OBJECTID": 177,
+    "NAME": "Vietnamese Buddhist Temple",
+    "DENOMINATION": "Buddhism",
+    "ADDRESS": "147 SOUTH BEND RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87101988,
+    "LATITUDE": 43.22936975
+  },
+  {
+    "X": 589776.4364,
+    "Y": 4798563.063,
+    "OBJECTID": 178,
     "NAME": "Waterdown Christian And Missionary Alliance",
     "DENOMINATION": "Alliance",
     "ADDRESS": "21 MILL ST N",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -79.89253815,
-    "LATITUDE": 43.33455457,
-    "WEBSITE": "https://www.cmacan.org/"
+    "LATITUDE": 43.33455457
   },
   {
-    //Valid
-    "ID": 307,
-    "NAME": "West Flamborough Presbyterian Church",
+    "X": 578562.5986,
+    "Y": 4791036.109,
+    "OBJECTID": 179,
+    "NAME": "West Flamboro Presbyterian Church",
     "DENOMINATION": "Presbyterian",
     "ADDRESS": "295 HWY 8",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -80.03192464,
-    "LATITUDE": 43.26804266,
-    "WEBSITE": "http://www.wfpconline.com/"
+    "LATITUDE": 43.26804266
   },
   {
-    //Valid
-    "ID": 308,
+    "X": 574001.0004,
+    "Y": 4798666.373,
+    "OBJECTID": 180,
     "NAME": "Westover Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "1149 WESTOVER RD",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -80.0870996,
-    "LATITUDE": 43.33720337,
-    "WEBSITE": "None"
+    "LATITUDE": 43.33720337
   },
-  { 
-    //Valid
-    "ID": 309,
+  {
+    "X": 590792.1524,
+    "Y": 4790555.534,
+    "OBJECTID": 181,
     "NAME": "Zion United Church",
     "DENOMINATION": "United",
     "ADDRESS": "69 PEARL ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.8813334,
-    "LATITUDE": 43.2623416,
-    "WEBSITE": "None"
+    "LATITUDE": 43.2623416
   },
   {
-    //Valid
-    "ID": 310,
+    "X": 585791.8292,
+    "Y": 4798525.064,
+    "OBJECTID": 182,
     "NAME": "Flamborough Baptist Church",
     "DENOMINATION": "Baptist",
     "ADDRESS": "41 5TH CON RD E",
     "COMMUNITY": "FLAMBOROUGH",
     "LONGITUDE": -79.94168888,
-    "LATITUDE": 43.3346778,
-    "WEBSITE": "http://flamboroughbaptist.church/"
+    "LATITUDE": 43.3346778
   },
   {
-    //Valid
-    "ID": 311,
-    "NAME": "Crossfire Assembly",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "X": 590675.2977,
+    "Y": 4790384.906,
+    "OBJECTID": 183,
+    "NAME": "King Street Baptist Church",
+    "DENOMINATION": "Baptist",
     "ADDRESS": "462 KING ST W",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.882608,
-    "LATITUDE": 43.260869,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.88280101,
+    "LATITUDE": 43.26081952
   },
   {
-    //Valid
-    "ID": 314,
-    "NAME": "Free Reformed Church of Hamilton",
-    "DENOMINATION": "Reformed",
+    "X": 593625.7371,
+    "Y": 4783541.047,
+    "OBJECTID": 184,
+    "NAME": "New Hope Community Church",
+    "DENOMINATION": "Community Church",
+    "ADDRESS": "24 ARNO ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84761765,
+    "LATITUDE": 43.19884416
+  },
+  {
+    "X": 586147.4395,
+    "Y": 4787108.971,
+    "OBJECTID": 185,
+    "NAME": "Macneill Memorial Baptist Church (Ancaster)",
+    "DENOMINATION": "Baptist",
     "ADDRESS": "1114 OLD MOHAWK RD",
     "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.93956245,
-    "LATITUDE": 43.23168055,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.93909057,
+    "LATITUDE": 43.23185698
   },
   {
-    //Valid
-    "ID": 315,
-    "NAME": "St. Augustine's Parish",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "58 SYDENHAM ST",
-    "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.956640,
-    "LATITUDE": 43.268808,
-    "WEBSITE": "http://www.staugustinesparish.ca/"
+    "X": 582290.6894,
+    "Y": 4785032.015,
+    "OBJECTID": 186,
+    "NAME": "Marshall Memorial United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "184 FIDDLERS GREEN RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.98688888,
+    "LATITUDE": 43.21358804
   },
   {
-    //Valid
-    "ID": 318,
-    "NAME": "Wat Khmer Kampuchea Krom Buddhist Temple And Meditation Centre",
-    "DENOMINATION": "Buddhism",
-    "ADDRESS": "516 BARTON ST",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.71002549,
-    "LATITUDE": 43.22445489,
-    "WEBSITE": "None"
+    "X": 593316.2311,
+    "Y": 4787058.174,
+    "OBJECTID": 187,
+    "NAME": "Meadow Creek Community Church",
+    "DENOMINATION": "Associated Gospel Churches",
+    "ADDRESS": "662 FENNELL AVE E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85083193,
+    "LATITUDE": 43.23054694
   },
   {
-    //Valid
-    "ID": 319,
-    "NAME": "Stone Ridge Bible Chapel",
+    "X": 584349.9877,
+    "Y": 4798612.031,
+    "OBJECTID": 188,
+    "NAME": "Millgrove United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "374 5TH CON RD W",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.95945888,
+    "LATITUDE": 43.33562396
+  },
+  {
+    "X": 584663.5012,
+    "Y": 4784016.525,
+    "OBJECTID": 189,
+    "NAME": "Netherland Reformed Church",
+    "DENOMINATION": "Reformed",
+    "ADDRESS": "572 SOUTHCOTE RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.95783667,
+    "LATITUDE": 43.20418291
+  },
+  {
+    "X": 584341.4722,
+    "Y": 4791017.058,
+    "OBJECTID": 190,
+    "NAME": "New Christian Life Assembly",
     "DENOMINATION": "Non-denominational",
-    "ADDRESS": "1457 UPPER SHERMAN AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.86019487,
-    "LATITUDE": 43.20133012,
-    "WEBSITE": "http://www.stoneridgeonline.ca/"
-  },
-  {
-    //Valid
-    "ID": 320,
-    "NAME": "Temple Anshe Sholom (Reform)",
-    "DENOMINATION": "Jewish",
-    "ADDRESS": "215 CLINE AVE N",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.90349347,
-    "LATITUDE": 43.26406712,
-    "WEBSITE": "http://www.anshesholom.ca/"
-  },
-  {
-    //Valid
-    "ID": 321,
-    "NAME": "Bosnian Islamic Center",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "202 BARTON ST",
-    "COMMUNITY": "STONEY CREEK",
-    "LONGITUDE": -79.73630525,
-    "LATITUDE": 43.23146026,
-    "WEBSITE": "http://bichamilton.com/"
-  },
-  {
-    //Valid
-    "ID": 322,
-    "NAME": "Hamilton Mosque (Sunni Muslims)",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "1545 STONE CHURCH RD E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.82067132,
-    "LATITUDE": 43.19546692,
-    "WEBSITE": "https://hamiltonmosque.com/"
-  },
-  {
-    //Valid
-    "ID": 323,
-    "NAME": "Umar Mosque (Sunni Muslims)",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "734 RENNIE ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.773953,
-    "LATITUDE": 43.246743,
-    "WEBSITE": "https://hamiltonmosque.com/"
-  },
-  {
-    //Valid
-    "ID": 324,
-    "NAME": "Hamilton Islamic Centre",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "1308 UPPER GAGE AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84982132,
-    "LATITUDE": 43.20408623,
-    "WEBSITE": "http://www.wilayatcentre.ca"
-  },
-  {
-    //Valid
-    "ID": 325,
-    "NAME": "Razvi Islamic Centre (Shiatt Muslims)",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "95 MEAD AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.78188173,
-    "LATITUDE": 43.25325523,
-    "WEBSITE": "https://www.jaffari.org/ric/"
-  },
-  {
-    //Valid
-    "ID": 326,
-    "NAME": "Association Of Progressive Dawoodi Brothers Of Ontario (Bori Muslims)",
-    "DENOMINATION": "Muslim",
-    "ADDRESS": "60 HARLOWE RD",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.82081316,
-    "LATITUDE": 43.19085624,
-    "WEBSITE": "http://www.apdbo.org/"
-  },
-  {
-    //Valid
-    "ID": 330,
-    "NAME": "Church Of Pentecost",
-    "DENOMINATION": "Pentecostal",
-    "ADDRESS": "1047 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.81765377,
-    "LATITUDE": 43.25214132,
-    "WEBSITE": "http://www.copwca.org/"
-  },
-  {
-    //Valid
-    "ID": 331,
-    "NAME": "Apostolic Ark Ministries",
-    "DENOMINATION": "Pentecostal Assemblies of Canada",
-    "ADDRESS": "251 KING WILLIAM ST",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8594533,
-    "LATITUDE": 43.25521226,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 333,
-    "NAME": "Diocese Of Hamilton",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "700 KING ST W",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.8904092,
-    "LATITUDE": 43.26366278,
-    "WEBSITE": "https://hamiltondiocese.com/"
-  },
-  {
-    //Valid
-    "ID": 335,
-    "NAME": "Temple Of The Guiding Star",
-    "DENOMINATION": "Spiritualists",
-    "ADDRESS": "21 ROSEDENE AVE",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.87407077,
-    "LATITUDE": 43.24445484,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 336,
-    "NAME": "The Assembly Of The Church Of The Universe",
-    "DENOMINATION": "Universal",
-    "ADDRESS": "544 BARTON ST E",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.84247979,
-    "LATITUDE": 43.2579542,
-    "WEBSITE": "http://www.iamm.com/"
-  },
-  {
-    //Valid
-    "ID": 337,
-    "NAME": "United Church (Lynden)",
-    "DENOMINATION": "United",
-    "ADDRESS": "3989 GOVERNORS RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.14488166,
-    "LATITUDE": 43.22895516,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 338,
-    "NAME": "Bowman United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "880 GARNER ROAD EAST",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.94252767,
-    "LATITUDE": 43.20803942,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 358,
-    "NAME": "Meadowlands Fellowship Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "211 STONEHENGE DR",
-    "COMMUNITY": "ANCASTER",
-    "LONGITUDE": -79.9506487,
-    "LATITUDE": 43.21603075,
-    "WEBSITE": "http://www.meadowlandsfellowship.com/"
-  },
-  {
-    //Valid
-    "ID": 359,
-    "NAME": "Flamborough Christian Fellowship Centre",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "329 CONCESSION 6 E",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.93208574,
-    "LATITUDE": 43.36364011,
-    "WEBSITE": "http://flamcf.ca/"
-  },
-  {
-    //Valid
-    "ID": 360,
-    "NAME": "St. Thomas The Apostle Church",
-    "DENOMINATION": "Roman Catholic",
-    "ADDRESS": "715 CENTRE RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.91570164,
-    "LATITUDE": 43.34461522,
-    "WEBSITE": "http://www.stthomaswaterdown.com/"
-  },
-  {
-    //Valid
-    "ID": 362,
-    "NAME": "Bethel Christian Reformed Church",
-    "DENOMINATION": "Christian Reformed",
-    "ADDRESS": "606 DUNDAS ST E",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -79.86795558,
-    "LATITUDE": 43.35193608,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 363,
-    "NAME": "Strabane United Church",
-    "DENOMINATION": "United",
-    "ADDRESS": "1565 BROCK RD",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.03363554,
-    "LATITUDE": 43.37927101,
-    "WEBSITE": "https://freeltonandstrabaneunitedchurch.org/"
-  },
-  {
-    //Valid
-    "ID": 364,
-    "NAME": "Gurdwara Sikh Sangat",
-    "DENOMINATION": "Sikh",
-    "ADDRESS": "200 OLD GUELPH RD",
+    "ADDRESS": "165 KING ST W",
     "COMMUNITY": "DUNDAS",
-    "LONGITUDE": -79.90765813,
-    "LATITUDE": 43.29582237,
-    "WEBSITE": "https://www.hamiltongurdwara.com/"
+    "LONGITUDE": -79.96072939,
+    "LATITUDE": 43.26724639
   },
   {
-    //Valid
-    "ID": 365,
-    "NAME": "Zion United Reformed Church Of Sheffield",
-    "DENOMINATION": "United Reformed",
-    "ADDRESS": "1238 OLD HWY 8",
+    "X": 580506.6831,
+    "Y": 4791630.658,
+    "OBJECTID": 191,
+    "NAME": "New Hope Christian Centre",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "176 HWY 8",
     "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.20368009,
-    "LATITUDE": 43.32471012,
-    "WEBSITE": "https://zurch.ca/"
+    "LONGITUDE": -80.0078855,
+    "LATITUDE": 43.27319035
   },
   {
-    //Valid
-    "ID": 366,
-    "NAME": "Troy United Church",
+    "X": 578123.0602,
+    "Y": 4805445.882,
+    "OBJECTID": 192,
+    "NAME": "Our Lady Of Mount Carmel Roman Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "55 FREELTON RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.03528849,
+    "LATITUDE": 43.39782372
+  },
+  {
+    "X": 584041.788,
+    "Y": 4786182.901,
+    "OBJECTID": 193,
+    "NAME": "Presbyterian Church Assembly",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "495 GOLF LINKS RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.96515863,
+    "LATITUDE": 43.22375685
+  },
+  {
+    "X": 586372.6749,
+    "Y": 4794779.225,
+    "OBJECTID": 194,
+    "NAME": "Rock Chapel United Church",
     "DENOMINATION": "United",
-    "ADDRESS": "2299 TROY RD",
+    "ADDRESS": "451 ROCK CHAPEL RD",
     "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.18482579,
-    "LATITUDE": 43.26061982,
-    "WEBSITE": "http://troyunitedchurch.org/"
+    "LONGITUDE": -79.93511405,
+    "LATITUDE": 43.30088738
   },
   {
-    //Valids
-    "ID": 367,
-    "NAME": "Rockton United Church",
+    "X": 582999.1983,
+    "Y": 4786268.537,
+    "OBJECTID": 195,
+    "NAME": "Ryerson United Church (Ancaster)",
     "DENOMINATION": "United",
-    "ADDRESS": "792 OLD HWY 8",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.12609365,
-    "LATITUDE": 43.30109249,
-    "WEBSITE": "http://rocktonunitedchurch.com/"
+    "ADDRESS": "265 WILSON ST E",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.97798157,
+    "LATITUDE": 43.22464326
   },
   {
-    //Valid
-    "ID": 368,
-    "NAME": "St. Alban The Martyr Anglican Church",
-    "DENOMINATION": "Anglican",
-    "ADDRESS": "758 OLD HWY 8",
-    "COMMUNITY": "FLAMBOROUGH",
-    "LONGITUDE": -80.12289504,
-    "LATITUDE": 43.29981349,
-    "WEBSITE": "None"
-  },
-  {
-    //Valid
-    "ID": 393,
-    "NAME": "Adas Israel Congregation Of Hamilton",
-    "DENOMINATION": "ADAS ISRAEL",
-    "ADDRESS": "125 CLINE AVE S",
-    "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.910528,
-    "LATITUDE": 43.256704,
-    "WEBSITE": "http://www.adasisrael.ca/"
-  },
-  {
-    //Valid
-    "ID": 394,
-    "NAME": "Our Lady of Mercy Catholic Church",
+    "X": 590348.7762,
+    "Y": 4790742.525,
+    "OBJECTID": 196,
+    "NAME": "Our Lady Of Mercy Luthuanian Parish",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "58 DUNDURN ST N",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.886846,
-    "LATITUDE": 43.263992,
-    "WEBSITE": "None"
+    "LONGITUDE": -79.88676462,
+    "LATITUDE": 43.26407837
   },
   {
-    //Valid
-    "ID": 395,
+    "X": 588370.713,
+    "Y": 4789905.437,
+    "OBJECTID": 197,
+    "NAME": "Adas Israel Congregation Of Hamilton",
+    "DENOMINATION": "ADAS ISRAEL",
+    "ADDRESS": "128 CLINE AVE S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.91126734,
+    "LATITUDE": 43.2567766
+  },
+  {
+    "X": 591190.96,
+    "Y": 4790468.038,
+    "OBJECTID": 198,
     "NAME": "The House Of Peace Church",
     "DENOMINATION": "Church of Jesus Christ",
     "ADDRESS": "7 PETER ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.87643503,
-    "LATITUDE": 43.26150573,
-    "WEBSITE": "None"
+    "LATITUDE": 43.26150573
   },
   {
-    //Valid
-    "ID": 397,
+    "X": 591634.3404,
+    "Y": 4790387.066,
+    "OBJECTID": 199,
+    "NAME": "The Vine Philpott Memorial Church",
+    "DENOMINATION": "Associated Gospel Churches",
+    "ADDRESS": "78 VINE ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87098664,
+    "LATITUDE": 43.26072296
+  },
+  {
+    "X": 591725.0559,
+    "Y": 4790365.09,
+    "OBJECTID": 200,
     "NAME": "Restoration House Hamilton",
     "DENOMINATION": "Redeemed Christian Church of God",
     "ADDRESS": "54 VINE ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86987282,
-    "LATITUDE": 43.26051407,
-    "WEBSITE": "https://restorationhouse.ca/"
+    "LATITUDE": 43.26051407
   },
   {
-    //Valid
-    "ID": 398,
+    "X": 591772.9069,
+    "Y": 4790658.311,
+    "OBJECTID": 201,
     "NAME": "Saint Mary's Church",
     "DENOMINATION": "Roman Catholic Church",
     "ADDRESS": "23 SHEAFFE ST",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86923451,
-    "LATITUDE": 43.2631481,
-    "WEBSITE": "http://www.stmaryshamilton.org.au/"
+    "LATITUDE": 43.2631481
   },
   {
-    //Valid
-    "ID": 399,
+    "X": 592231.033,
+    "Y": 4790075.394,
+    "OBJECTID": 202,
     "NAME": "Hamilton Downtown Sunni Mosque",
     "DENOMINATION": "Muslim",
-    "ADDRESS": "221 York Blvd",
+    "ADDRESS": "96 CATHARINE ST N",
     "COMMUNITY": "HAMILTON",
-    "LONGITUDE": -79.875592,
-    "LATITUDE": 43.261128,
-    "WEBSITE": "http://downtownmosque.com/"
+    "LONGITUDE": -79.86368848,
+    "LATITUDE": 43.25784422
   },
   {
-    //Valid
-    "ID": 409,
+    "X": 592514.2101,
+    "Y": 4789950.973,
+    "OBJECTID": 203,
     "NAME": "Streetlight Christian Church",
-    "DENOMINATION": "Reformed",
+    "DENOMINATION": "REFORMED",
     "ADDRESS": "82 FERGUSON AVE N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.86022123,
-    "LATITUDE": 43.25668936,
-    "WEBSITE": "http://streetlightministries.ca/"
+    "LATITUDE": 43.25668936
   },
   {
-    //Valid
-    "ID": 410,
+    "X": 592677.3381,
+    "Y": 4789804.187,
+    "OBJECTID": 204,
     "NAME": "Amorc",
-    "DENOMINATION": "Other",
+    "DENOMINATION": "Rosicrucian Order",
     "ADDRESS": "64 WELLINGTON ST N",
     "COMMUNITY": "HAMILTON",
     "LONGITUDE": -79.85823657,
-    "LATITUDE": 43.25534782,
-    "WEBSITE": "http://www.amorc.org/"
+    "LATITUDE": 43.25534782
   },
   {
-    //Valid
-    "ID": 449,
+    "X": 590546.5336,
+    "Y": 4789052.073,
+    "OBJECTID": 205,
+    "NAME": "First Estonian Evangelical Lutheran Congregation",
+    "DENOMINATION": "Lutheran",
+    "ADDRESS": "3 MAPLESIDE AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88460625,
+    "LATITUDE": 43.24883554
+  },
+  {
+    "X": 586109.3704,
+    "Y": 4787088.893,
+    "OBJECTID": 206,
+    "NAME": "Maranatha Free Reformed Church",
+    "DENOMINATION": "Reformed",
+    "ADDRESS": "1114 OLD MOHAWK RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.93956245,
+    "LATITUDE": 43.23168055
+  },
+  {
+    "X": 584630.8984,
+    "Y": 4791232.317,
+    "OBJECTID": 207,
+    "NAME": "St. Augustine's Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "58 SYDENHAM ST",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.95713052,
+    "LATITUDE": 43.26915195
+  },
+  {
+    "X": 589778.2126,
+    "Y": 4783350.744,
+    "OBJECTID": 208,
+    "NAME": "Iglesia Bautista Hispana Monte Calvario",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "1759 UPPER JAMES ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8949966,
+    "LATITUDE": 43.19759802
+  },
+  {
+    "X": 593605.8511,
+    "Y": 4789896.555,
+    "OBJECTID": 209,
+    "NAME": "Primera Iglesia Bautisa Hispana",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "120 WENTWORTH ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84678408,
+    "LATITUDE": 43.25606466
+  },
+  {
+    "X": 604760.7278,
+    "Y": 4786548.35,
+    "OBJECTID": 210,
+    "NAME": "Wat Khmer Kampuchea Krom Buddhist Temple And Meditation Centre",
+    "DENOMINATION": "Buddhism",
+    "ADDRESS": "516 BARTON ST",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.71002549,
+    "LATITUDE": 43.22445489
+  },
+  {
+    "X": 592600.128,
+    "Y": 4783803.128,
+    "OBJECTID": 211,
+    "NAME": "Stone Ridge Bible Chapel",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1457 UPPER SHERMAN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86019487,
+    "LATITUDE": 43.20133012
+  },
+  {
+    "X": 588991.09,
+    "Y": 4790723.33,
+    "OBJECTID": 212,
+    "NAME": "Temple Anshe Sholom (Reform)",
+    "DENOMINATION": "Jewish",
+    "ADDRESS": "215 CLINE AVE N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.90349347,
+    "LATITUDE": 43.26406712
+  },
+  {
+    "X": 602614.7338,
+    "Y": 4787293.748,
+    "OBJECTID": 213,
+    "NAME": "Bosnian Islamic Center",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "202 BARTON ST",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.73630525,
+    "LATITUDE": 43.23146026
+  },
+  {
+    "X": 595820.3073,
+    "Y": 4783196.491,
+    "OBJECTID": 214,
+    "NAME": "Hamilton Mosque (Sunni Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "1545 STONE CHURCH RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82067132,
+    "LATITUDE": 43.19546692
+  },
+  {
+    "X": 599518.84,
+    "Y": 4788923.29,
+    "OBJECTID": 215,
+    "NAME": "Umar Mosque (Sunni Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "734 RENNIE ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.77412821,
+    "LATITUDE": 43.24654521
+  },
+  {
+    "X": 593438.6965,
+    "Y": 4784120.736,
+    "OBJECTID": 216,
+    "NAME": "Al-Wilaya Islamic Centre (Shiatt Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "1310 UPPER GAGE AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84982132,
+    "LATITUDE": 43.20408623
+  },
+  {
+    "X": 598878.53,
+    "Y": 4789659.27,
+    "OBJECTID": 217,
+    "NAME": "Razvi Islamic Centre (Shiatt Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "95 MEAD AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.78188173,
+    "LATITUDE": 43.25325523
+  },
+  {
+    "X": 595815.9964,
+    "Y": 4782684.296,
+    "OBJECTID": 218,
+    "NAME": "Association Of Progressive Dawoodi Brothers Of Ontario (Bori Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "60 HARLOWE RD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82081316,
+    "LATITUDE": 43.19085624
+  },
+  {
+    "X": 595776.5486,
+    "Y": 4782695.264,
+    "OBJECTID": 219,
+    "NAME": "Ismaili Community Of Hamilton (Ismaili Muslims)",
+    "DENOMINATION": "Muslim",
+    "ADDRESS": "60 HARLOWE RD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82129663,
+    "LATITUDE": 43.19095998
+  },
+  {
+    "X": 592829.74,
+    "Y": 4788311.13,
+    "OBJECTID": 220,
+    "NAME": "Hamilton Church Of Christ",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "450 CONCESSION ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85661087,
+    "LATITUDE": 43.24188722
+  },
+  {
+    "X": 584252.2371,
+    "Y": 4791289.757,
+    "OBJECTID": 221,
+    "NAME": "Valley Community Church Meeting At Centre Of The Arts",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "37 MARKET ST N",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.96178705,
+    "LATITUDE": 43.26971153
+  },
+  {
+    "X": 595976.5236,
+    "Y": 4789493.879,
+    "OBJECTID": 222,
+    "NAME": "Church Of Pentecost",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "1047 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.81765377,
+    "LATITUDE": 43.25214132
+  },
+  {
+    "X": 592578.781,
+    "Y": 4789787.784,
+    "OBJECTID": 223,
+    "NAME": "Apostolic Ark Ministries",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "251 KING WILLIAM ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8594533,
+    "LATITUDE": 43.25521226
+  },
+  {
+    "X": 594786.4461,
+    "Y": 4789873.787,
+    "OBJECTID": 224,
+    "NAME": "Victory Assemblies Of God",
+    "DENOMINATION": "Other",
+    "ADDRESS": "755 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83224611,
+    "LATITUDE": 43.25571214
+  },
+  {
+    "X": 590053.5977,
+    "Y": 4790692.439,
+    "OBJECTID": 225,
+    "NAME": "Diocese Of Hamilton",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "700 KING ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8904092,
+    "LATITUDE": 43.26366278
+  },
+  {
+    "X": 602450.5216,
+    "Y": 4785713.025,
+    "OBJECTID": 226,
+    "NAME": "The Salvation Army - Stoney Creek Corps",
+    "DENOMINATION": "Salvation Army",
+    "ADDRESS": "245 KING ST E",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.73862051,
+    "LATITUDE": 43.21725203
+  },
+  {
+    "X": 591408.3509,
+    "Y": 4788577.04,
+    "OBJECTID": 227,
+    "NAME": "Temple Of The Guiding Star",
+    "DENOMINATION": "Spiritualists",
+    "ADDRESS": "21 ROSEDENE AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87407077,
+    "LATITUDE": 43.24445484
+  },
+  {
+    "X": 593952.3249,
+    "Y": 4790111.226,
+    "OBJECTID": 228,
+    "NAME": "The Assembly Of The Church Of The Universe",
+    "DENOMINATION": "Universal",
+    "ADDRESS": "544 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84247979,
+    "LATITUDE": 43.2579542
+  },
+  {
+    "X": 569440.1003,
+    "Y": 4786595.314,
+    "OBJECTID": 229,
+    "NAME": "United Church (Lynden)",
+    "DENOMINATION": "United",
+    "ADDRESS": "3989 GOVERNORS RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.14488166,
+    "LATITUDE": 43.22895516
+  },
+  {
+    "X": 585230.9424,
+    "Y": 4785339.568,
+    "OBJECTID": 230,
+    "NAME": "Meadowlands Fellowship Christian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "211 STONEHENGE DR",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.9506487,
+    "LATITUDE": 43.21603075
+  },
+  {
+    "X": 586529.1549,
+    "Y": 4801751.423,
+    "OBJECTID": 231,
+    "NAME": "Flamborough Christian Fellowship Centre",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "329 CONCESSION 6 E",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.93208574,
+    "LATITUDE": 43.36364011
+  },
+  {
+    "X": 587884.1604,
+    "Y": 4799655.709,
+    "OBJECTID": 232,
+    "NAME": "St. Thomas The Apostle Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "715 CENTRE RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.91570164,
+    "LATITUDE": 43.34461522
+  },
+  {
+    "X": 591743.0581,
+    "Y": 4800520.12,
+    "OBJECTID": 233,
+    "NAME": "Bethel Christian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "606 DUNDAS ST E",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.86795558,
+    "LATITUDE": 43.35193608
+  },
+  {
+    "X": 578280.7927,
+    "Y": 4803387.029,
+    "OBJECTID": 234,
+    "NAME": "Strabane United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "1565 BROCK RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.03363554,
+    "LATITUDE": 43.37927101
+  },
+  {
+    "X": 607177.1474,
+    "Y": 4784806.605,
+    "OBJECTID": 235,
     "NAME": "Immaculate Heart Of Mary Parish",
     "DENOMINATION": "Roman Catholic",
     "ADDRESS": "934 HIGHWAY NO. 8",
     "COMMUNITY": "STONEY CREEK",
     "LONGITUDE": -79.68061664,
-    "LATITUDE": 43.20843574,
-    "WEBSITE": "https://ihmchurch.ca/"
+    "LATITUDE": 43.20843574
+  },
+  {
+    "X": 588606.9905,
+    "Y": 4794245.483,
+    "OBJECTID": 236,
+    "NAME": "Gurdwara Sikh Sangat",
+    "DENOMINATION": "Sikh",
+    "ADDRESS": "200 OLD GUELPH RD",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.90765813,
+    "LATITUDE": 43.29582237
+  },
+  {
+    "X": 564564.0148,
+    "Y": 4797182.186,
+    "OBJECTID": 237,
+    "NAME": "Zion United Reformed Church Of Sheffield",
+    "DENOMINATION": "United Reformed",
+    "ADDRESS": "1238 OLD HWY 8",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.20368009,
+    "LATITUDE": 43.32471012
+  },
+  {
+    "X": 566162.1335,
+    "Y": 4790079.408,
+    "OBJECTID": 238,
+    "NAME": "Troy United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "2299 TROY RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.18482579,
+    "LATITUDE": 43.26061982
+  },
+  {
+    "X": 570882.04,
+    "Y": 4794622.24,
+    "OBJECTID": 239,
+    "NAME": "Rockton United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "792 OLD HWY 8",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.12609365,
+    "LATITUDE": 43.30109249
+  },
+  {
+    "X": 571142.97,
+    "Y": 4794482.92,
+    "OBJECTID": 240,
+    "NAME": "St. Alban The Martyr Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "758 OLD HWY 8",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.12289504,
+    "LATITUDE": 43.29981349
+  },
+  {
+    "X": 585901.7739,
+    "Y": 4784460.407,
+    "OBJECTID": 241,
+    "NAME": "Bowman United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "880 GARNER ROAD EAST",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.94252767,
+    "LATITUDE": 43.20803942
+  },
+  {
+    "X": 594786.96,
+    "Y": 4788725.66,
+    "OBJECTID": 242,
+    "NAME": "Trinity Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "922 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83243727,
+    "LATITUDE": 43.2453757
+  },
+  {
+    "X": 587529.5672,
+    "Y": 4789569.879,
+    "OBJECTID": 243,
+    "NAME": "St. Margaret's Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "134 EMERSON ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.92168181,
+    "LATITUDE": 43.25385369
+  },
+  {
+    "X": 591836.46,
+    "Y": 4787783.68,
+    "OBJECTID": 244,
+    "NAME": "The International Eagle's Cry Ministries",
+    "DENOMINATION": "Full Gospel",
+    "ADDRESS": "208 BRUCEDALE AVE E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86893066,
+    "LATITUDE": 43.23726023
+  },
+  {
+    "X": 588449.908,
+    "Y": 4790271.696,
+    "OBJECTID": 245,
+    "NAME": "Macneill Memorial Baptist Church (Hamilton)",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "1145 KING ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.91023301,
+    "LATITUDE": 43.26006476
+  },
+  {
+    "X": 597340.34,
+    "Y": 4789080.57,
+    "OBJECTID": 246,
+    "NAME": "Jehovah's Witnesses (Delta And East Hamilton Congregation)",
+    "DENOMINATION": "Jehovah's Witnesses",
+    "ADDRESS": "1441 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80092934,
+    "LATITUDE": 43.24824555
+  },
+  {
+    "X": 601842.9342,
+    "Y": 4786018.17,
+    "OBJECTID": 247,
+    "NAME": "Stoney Creek Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "79 COLLEGIATE AVE",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.74604312,
+    "LATITUDE": 43.22008136
+  },
+  {
+    "X": 593308.15,
+    "Y": 4786110.92,
+    "OBJECTID": 248,
+    "NAME": "Reorganized Church Of Jesus Christ Of Latter Day S",
+    "DENOMINATION": "Reorganized Church of Jesus Christ of Latter Day Saints",
+    "ADDRESS": "817 UPPER SHERMAN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85109162,
+    "LATITUDE": 43.22201989
+  },
+  {
+    "X": 587592.3108,
+    "Y": 4789515.473,
+    "OBJECTID": 249,
+    "NAME": "Apostolic Holiness Church Of Jesus Christ",
+    "DENOMINATION": "Apostolic",
+    "ADDRESS": "42 ROYAL AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.92091762,
+    "LATITUDE": 43.25335658
+  },
+  {
+    "X": 600801.35,
+    "Y": 4785635.41,
+    "OBJECTID": 250,
+    "NAME": "Cheyne Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "7 KING ST W",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.75893472,
+    "LATITUDE": 43.21677535
+  },
+  {
+    "X": 593290.41,
+    "Y": 4788356.16,
+    "OBJECTID": 251,
+    "NAME": "Chalmers Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "200 MOUNTAIN PARK AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85093027,
+    "LATITUDE": 43.24223578
+  },
+  {
+    "X": 599490.79,
+    "Y": 4791290.69,
+    "OBJECTID": 252,
+    "NAME": "Living Word Covenant Community Church",
+    "DENOMINATION": "Community Church",
+    "ADDRESS": "159 BEACH BLVD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.77404609,
+    "LATITUDE": 43.26786171
+  },
+  {
+    "X": 592874.1337,
+    "Y": 4786228.349,
+    "OBJECTID": 253,
+    "NAME": "Burkholder United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "465 MOHAWK RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85641488,
+    "LATITUDE": 43.22313064
+  },
+  {
+    "X": 593311.39,
+    "Y": 4788209.2,
+    "OBJECTID": 254,
+    "NAME": "The Salvation Army - Hamilton Loation Corps",
+    "DENOMINATION": "Salvation Army",
+    "ADDRESS": "573 CONCESSION ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85069678,
+    "LATITUDE": 43.24091011
+  },
+  {
+    "X": 597391.34,
+    "Y": 4774845.44,
+    "OBJECTID": 255,
+    "NAME": "Binbrook United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "2623 BINBROOK RD",
+    "COMMUNITY": "GLANBROOK",
+    "LONGITUDE": -79.80280851,
+    "LATITUDE": 43.12008256
+  },
+  {
+    "X": 594650,
+    "Y": 4783268.81,
+    "OBJECTID": 256,
+    "NAME": "Christian International Life Centre",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "45 NEBO RD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8350598,
+    "LATITUDE": 43.19626556
+  },
+  {
+    "X": 588688.7756,
+    "Y": 4779811.443,
+    "OBJECTID": 257,
+    "NAME": "St. Paul's Anglican Church  (Mount Hope)",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "2869 HWY 6",
+    "COMMUNITY": "GLANBROOK",
+    "LONGITUDE": -79.90897077,
+    "LATITUDE": 43.16586181
+  },
+  {
+    "X": 597547.69,
+    "Y": 4782913.94,
+    "OBJECTID": 258,
+    "NAME": "Heritage Green Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "956 PARAMOUNT DR",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.79946559,
+    "LATITUDE": 43.19270206
+  },
+  {
+    "X": 597582.14,
+    "Y": 4786997.04,
+    "OBJECTID": 259,
+    "NAME": "St. Mary Armenian Church",
+    "DENOMINATION": "Orthodox",
+    "ADDRESS": "8 MAYHURST AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.79832014,
+    "LATITUDE": 43.22945684
+  },
+  {
+    "X": 597414.61,
+    "Y": 4789053.11,
+    "OBJECTID": 260,
+    "NAME": "Living Water Ministries",
+    "DENOMINATION": "Non-denominational",
+    "ADDRESS": "1475 BARTON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80001951,
+    "LATITUDE": 43.24798874
+  },
+  {
+    "X": 605086.21,
+    "Y": 4785514.97,
+    "OBJECTID": 261,
+    "NAME": "Stoney Creek Alliance Church",
+    "DENOMINATION": "Alliance",
+    "ADDRESS": "605 HWY 8",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.70621541,
+    "LATITUDE": 43.21510669
+  },
+  {
+    "X": 590230.8402,
+    "Y": 4790709.421,
+    "OBJECTID": 262,
+    "NAME": "Hamilton Chinese Alliance Church",
+    "DENOMINATION": "Alliance",
+    "ADDRESS": "50 BREADALBANE ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88822293,
+    "LATITUDE": 43.26379447
+  },
+  {
+    "X": 590766.733,
+    "Y": 4790567.387,
+    "OBJECTID": 263,
+    "NAME": "Livingston United Church (Korean)",
+    "DENOMINATION": "United",
+    "ADDRESS": "69 PEARL ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88164458,
+    "LATITUDE": 43.26245138
+  },
+  {
+    "X": 588539.54,
+    "Y": 4794451.65,
+    "OBJECTID": 264,
+    "NAME": "Seventh-Day Adventist Reformed Church",
+    "DENOMINATION": "Seventh Day Adventist Reformed",
+    "ADDRESS": "232 OLD GUELPH RD",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.9084563,
+    "LATITUDE": 43.29768642
+  },
+  {
+    "X": 592068.2243,
+    "Y": 4790632.9,
+    "OBJECTID": 265,
+    "NAME": "Christs Church Cathedral",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "252 JAMES ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86560075,
+    "LATITUDE": 43.2628833
+  },
+  {
+    "X": 594132.02,
+    "Y": 4789041.25,
+    "OBJECTID": 266,
+    "NAME": "St. Peter Church Of",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "705 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84044913,
+    "LATITUDE": 43.24829896
+  },
+  {
+    "X": 598585.02,
+    "Y": 4788397.36,
+    "OBJECTID": 267,
+    "NAME": "St. Nicholas Ukrainian Catholic Parish",
+    "DENOMINATION": "Ukranian Catholic",
+    "ADDRESS": "260 MELVIN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.78572251,
+    "LATITUDE": 43.24193311
+  },
+  {
+    "X": 591999.3137,
+    "Y": 4790943.272,
+    "OBJECTID": 268,
+    "NAME": "Holy Resurrection Romanian Orthodox Church",
+    "DENOMINATION": "Romanian Orthodox",
+    "ADDRESS": "20 MURRAY ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8663978,
+    "LATITUDE": 43.26568596
+  },
+  {
+    "X": 594946.89,
+    "Y": 4783275.26,
+    "OBJECTID": 269,
+    "NAME": "Hamilton Church Of God",
+    "DENOMINATION": "Pentecostal",
+    "ADDRESS": "1338 STONE CHURCH RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83140535,
+    "LATITUDE": 43.19628637
+  },
+  {
+    "X": 597615.66,
+    "Y": 4774769.32,
+    "OBJECTID": 270,
+    "NAME": "Knox Presbyterian Church (Binbrook)",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "2553 BINBROOK RD",
+    "COMMUNITY": "GLANBROOK",
+    "LONGITUDE": -79.80006502,
+    "LATITUDE": 43.11936838
+  },
+  {
+    "X": 593515.7,
+    "Y": 4788239.54,
+    "OBJECTID": 271,
+    "NAME": "Sacred Heart Roman Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "24 POPLAR AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84817568,
+    "LATITUDE": 43.24115795
+  },
+  {
+    "X": 591760.05,
+    "Y": 4789368.54,
+    "OBJECTID": 272,
+    "NAME": "St. Charles Garnier Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "129 HUGHSON ST S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86960774,
+    "LATITUDE": 43.25153795
+  },
+  {
+    "X": 598473.36,
+    "Y": 4783061.4,
+    "OBJECTID": 273,
+    "NAME": "Heritage Green Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "360 ISAAC BROCK DR",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.78804944,
+    "LATITUDE": 43.19390951
+  },
+  {
+    "X": 607020.43,
+    "Y": 4785179.74,
+    "OBJECTID": 274,
+    "NAME": "Jehovah's Witnesses (Glover)",
+    "DENOMINATION": "Jehovah's Witnesses",
+    "ADDRESS": "217 GLOVER RD",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.68247306,
+    "LATITUDE": 43.21181707
+  },
+  {
+    "X": 592848.7984,
+    "Y": 4785021.091,
+    "OBJECTID": 275,
+    "NAME": "Jehovah's Witnesses (Eastmount Park Congregation)",
+    "DENOMINATION": "Jehovah's Witnesses",
+    "ADDRESS": "648 LIMERIDGE RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85692985,
+    "LATITUDE": 43.21226487
+  },
+  {
+    "X": 600852.04,
+    "Y": 4785469.34,
+    "OBJECTID": 276,
+    "NAME": "Church Of The Redeemer",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "25 LAKE AVE S",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.75834111,
+    "LATITUDE": 43.21527351
+  },
+  {
+    "X": 600823.01,
+    "Y": 4785645.11,
+    "OBJECTID": 277,
+    "NAME": "Stoney Creek United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "1 KING ST W",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.75866633,
+    "LATITUDE": 43.21685978
+  },
+  {
+    "X": 605871.29,
+    "Y": 4785279.99,
+    "OBJECTID": 278,
+    "NAME": "Stoney Creek Community Church",
+    "DENOMINATION": "Community Church",
+    "ADDRESS": "725 HWY 8",
+    "COMMUNITY": "STONEY CREEK",
+    "LONGITUDE": -79.69659728,
+    "LATITUDE": 43.2128816
+  },
+  {
+    "X": 593213.37,
+    "Y": 4788276.11,
+    "OBJECTID": 279,
+    "NAME": "Mount Hamilton United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "31 SUMMIT AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85189253,
+    "LATITUDE": 43.24152462
+  },
+  {
+    "X": 591231.58,
+    "Y": 4784858.03,
+    "OBJECTID": 280,
+    "NAME": "Bethel Gospel Tabernacle",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "1355 UPPER WELLINGTON",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87686273,
+    "LATITUDE": 43.21099401
+  },
+  {
+    "X": 590685.8067,
+    "Y": 4790393.106,
+    "OBJECTID": 281,
+    "NAME": "St. George's Anglican Reformed Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "458 KING ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8826702,
+    "LATITUDE": 43.26089207
+  },
+  {
+    "X": 587291.9445,
+    "Y": 4787267.955,
+    "OBJECTID": 282,
+    "NAME": "Chedoke Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "865 MOHAWK RD W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.9249732,
+    "LATITUDE": 43.23315676
+  },
+  {
+    "X": 592668.31,
+    "Y": 4787199.3,
+    "OBJECTID": 283,
+    "NAME": "St. Augustine Of Canterbury",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "626 UPPER WENTWORTH",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85878567,
+    "LATITUDE": 43.23189735
+  },
+  {
+    "X": 592023.19,
+    "Y": 4790221.23,
+    "OBJECTID": 284,
+    "NAME": "St. John's (Evangelical) Lutheran Church",
+    "DENOMINATION": "Lutheran",
+    "ADDRESS": "104 HUGHSON ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86622431,
+    "LATITUDE": 43.25918257
+  },
+  {
+    "X": 590395.8875,
+    "Y": 4789474,
+    "OBJECTID": 285,
+    "NAME": "St. Joseph's Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "260 HERKIMER ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88639242,
+    "LATITUDE": 43.25265222
+  },
+  {
+    "X": 590738.7476,
+    "Y": 4790426.26,
+    "OBJECTID": 286,
+    "NAME": "Erskine Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "19 PEARL ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88201258,
+    "LATITUDE": 43.26118419
+  },
+  {
+    "X": 593492.61,
+    "Y": 4788151.15,
+    "OBJECTID": 287,
+    "NAME": "St. Stephen On The Mount Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "625 CONCESSION ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84847501,
+    "LATITUDE": 43.24036505
+  },
+  {
+    "X": 595944.68,
+    "Y": 4788415.46,
+    "OBJECTID": 288,
+    "NAME": "St. Enoch's Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "1209 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8182337,
+    "LATITUDE": 43.24243661
+  },
+  {
+    "X": 591540.7092,
+    "Y": 4784474.834,
+    "OBJECTID": 289,
+    "NAME": "Canadian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "353 STONE CHURCH RD E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87312133,
+    "LATITUDE": 43.20750667
+  },
+  {
+    "X": 590823.7799,
+    "Y": 4790901.367,
+    "OBJECTID": 290,
+    "NAME": "Crossfire Assembly",
+    "DENOMINATION": "Pentecostal Assemblies of Canada",
+    "ADDRESS": "430 YORK BLVD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.88088674,
+    "LATITUDE": 43.26545131
+  },
+  {
+    "X": 592141.8424,
+    "Y": 4790225.532,
+    "OBJECTID": 291,
+    "NAME": "Stewart Memorial Church",
+    "DENOMINATION": "Methodist Episcopal",
+    "ADDRESS": "112 JOHN ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86476201,
+    "LATITUDE": 43.25920681
+  },
+  {
+    "X": 593598.8259,
+    "Y": 4789879.69,
+    "OBJECTID": 292,
+    "NAME": "Wentworth Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "120 WENTWORTH ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84687347,
+    "LATITUDE": 43.2559137
+  },
+  {
+    "X": 592396.59,
+    "Y": 4789543.99,
+    "OBJECTID": 293,
+    "NAME": "First- Pilgrim United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "200 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86173829,
+    "LATITUDE": 43.25303976
+  },
+  {
+    "X": 592270.95,
+    "Y": 4791217.72,
+    "OBJECTID": 294,
+    "NAME": "Hughson Street Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "383 HUGHSON ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86300539,
+    "LATITUDE": 43.26812358
+  },
+  {
+    "X": 594967.61,
+    "Y": 4789762.95,
+    "OBJECTID": 295,
+    "NAME": "St. Anthony Of Padua Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "165 PROSPECT ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.83003376,
+    "LATITUDE": 43.2546915
+  },
+  {
+    "X": 592880.62,
+    "Y": 4787882.82,
+    "OBJECTID": 296,
+    "NAME": "Mount Hamilton Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "440 UPPER WENTWORTH",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.85605646,
+    "LATITUDE": 43.23802492
+  },
+  {
+    "X": 595341.01,
+    "Y": 4786392.78,
+    "OBJECTID": 297,
+    "NAME": "St. Michael's Anglican Church",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "1188 FENNELL AVE E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.82601731,
+    "LATITUDE": 43.22430333
+  },
+  {
+    "X": 597121.91,
+    "Y": 4788005.12,
+    "OBJECTID": 298,
+    "NAME": "St. Columba Presbyterian Church",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "1540 MAIN ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80380893,
+    "LATITUDE": 43.23859172
+  },
+  {
+    "X": 596763.0152,
+    "Y": 4788774.864,
+    "OBJECTID": 349,
+    "NAME": "Holy Family Catholic Church",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "1393 CANNON ST E",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.80809317,
+    "LATITUDE": 43.24556767
+  },
+  {
+    "X": 593584.1731,
+    "Y": 4789130.905,
+    "OBJECTID": 350,
+    "NAME": "Holy Veil Of Holy Mother Russian Orthodox Church",
+    "DENOMINATION": "Orthodox",
+    "ADDRESS": "75 SANFORD AVE S",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.84718113,
+    "LATITUDE": 43.24917431
+  },
+  {
+    "X": 570429.2391,
+    "Y": 4782944.803,
+    "OBJECTID": 351,
+    "NAME": "Jerseyville Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "3203 JERSEYVILLE RD W",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.13316795,
+    "LATITUDE": 43.19599529
+  },
+  {
+    "X": 572798.0884,
+    "Y": 4783530.566,
+    "OBJECTID": 352,
+    "NAME": "United Church (Jerseyville)",
+    "DENOMINATION": "United",
+    "ADDRESS": "15 FIELD RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.10393879,
+    "LATITUDE": 43.2010447
+  },
+  {
+    "X": 584812.3698,
+    "Y": 4791171.877,
+    "OBJECTID": 353,
+    "NAME": "Knox Presbyterian Church (Dundas)",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "23 MELVILLE ST",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.954904,
+    "LATITUDE": 43.26858739
+  },
+  {
+    "X": 589666.9769,
+    "Y": 4798747.807,
+    "OBJECTID": 354,
+    "NAME": "Knox Presbyterian Church (Waterdown)",
+    "DENOMINATION": "Presbyterian",
+    "ADDRESS": "80 MILL ST N",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.89385798,
+    "LATITUDE": 43.33623086
+  },
+  {
+    "X": 592136.3519,
+    "Y": 4786707.387,
+    "OBJECTID": 355,
+    "NAME": "Linden Park Community Church",
+    "DENOMINATION": "Community Church",
+    "ADDRESS": "484 EAST 16TH ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86541765,
+    "LATITUDE": 43.22753384
+  },
+  {
+    "X": 576250.6357,
+    "Y": 4786353.272,
+    "OBJECTID": 356,
+    "NAME": "United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "POWERLINE RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.0610575,
+    "LATITUDE": 43.22611834
+  },
+  {
+    "X": 581994.833,
+    "Y": 4785115.177,
+    "OBJECTID": 324,
+    "NAME": "Ancaster Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "91 CARRINGTON CRT",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.99051837,
+    "LATITUDE": 43.21436897
+  },
+  {
+    "X": 580348.9014,
+    "Y": 4783014.4,
+    "OBJECTID": 325,
+    "NAME": "Ancaster Canadian Reformed Church",
+    "DENOMINATION": "Reformed",
+    "ADDRESS": "575 SHAVER RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.01108491,
+    "LATITUDE": 43.19563179
+  },
+  {
+    "X": 582967.5223,
+    "Y": 4783693.865,
+    "OBJECTID": 326,
+    "NAME": "Ancaster Christian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "70 GARNER RD E",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.97875846,
+    "LATITUDE": 43.20146614
+  },
+  {
+    "X": 585854.1024,
+    "Y": 4784433.602,
+    "OBJECTID": 327,
+    "NAME": "Bethesda United Church (Pilgrim Baptist Fellowship)",
+    "DENOMINATION": "United",
+    "ADDRESS": "868 GARNER RD E",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.94311859,
+    "LATITUDE": 43.20780351
+  },
+  {
+    "X": 592058.2352,
+    "Y": 4790662.624,
+    "OBJECTID": 328,
+    "NAME": "Anglican Church Of Canada",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "252 JAMES ST N",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.86571884,
+    "LATITUDE": 43.26315212
+  },
+  {
+    "X": 582084.5254,
+    "Y": 4791154.81,
+    "OBJECTID": 329,
+    "NAME": "Baha'i Fireside",
+    "DENOMINATION": "Baha'I",
+    "ADDRESS": "132 HILLCREST AVE",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.98851504,
+    "LATITUDE": 43.26873588
+  },
+  {
+    "X": 590096.2916,
+    "Y": 4789166.063,
+    "OBJECTID": 330,
+    "NAME": "Beth Jacob Synagogue",
+    "DENOMINATION": "Jewish (Conservative)",
+    "ADDRESS": "375 ABERDEEN AVE",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.89013288,
+    "LATITUDE": 43.24991573
+  },
+  {
+    "X": 583907.7124,
+    "Y": 4794411.974,
+    "OBJECTID": 331,
+    "NAME": "Calvin Christian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "420 HWY 5 W",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.96555562,
+    "LATITUDE": 43.29785985
+  },
+  {
+    "X": 582965.8934,
+    "Y": 4788059.461,
+    "OBJECTID": 332,
+    "NAME": "Canterbury Hills Conference Centre",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "509 LIONS CLUB RD",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.97812222,
+    "LATITUDE": 43.24077112
+  },
+  {
+    "X": 582925.9239,
+    "Y": 4804872.174,
+    "OBJECTID": 333,
+    "NAME": "Carlisle United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "1432 CENTRE RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.9760758,
+    "LATITUDE": 43.39214297
+  },
+  {
+    "X": 589983.2293,
+    "Y": 4790677.397,
+    "OBJECTID": 334,
+    "NAME": "Cathedral Of Christ The King",
+    "DENOMINATION": "Roman Catholic",
+    "ADDRESS": "714 KING ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.89127853,
+    "LATITUDE": 43.26353577
+  },
+  {
+    "X": 581855.6935,
+    "Y": 4791858.483,
+    "OBJECTID": 335,
+    "NAME": "Christ Church (Dundas)",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "95 HWY 8",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.99122975,
+    "LATITUDE": 43.27509613
+  },
+  {
+    "X": 602270.7562,
+    "Y": 4776815.188,
+    "OBJECTID": 336,
+    "NAME": "Christ Church Anglican",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "1307 WOODBURN RD",
+    "COMMUNITY": "GLANBROOK",
+    "LONGITUDE": -79.74247839,
+    "LATITUDE": 43.13717243
+  },
+  {
+    "X": 586745.2116,
+    "Y": 4789552.087,
+    "OBJECTID": 337,
+    "NAME": "Christadelphian Ecclesia Church (Hamilton)",
+    "DENOMINATION": "Christadelphian",
+    "ADDRESS": "80 EWEN RD",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.9313458,
+    "LATITUDE": 43.25378418
+  },
+  {
+    "X": 591085.8441,
+    "Y": 4787790.896,
+    "OBJECTID": 338,
+    "NAME": "Christadelphians (Ancaster And Hamilton Mountain)",
+    "DENOMINATION": "Christadelphian",
+    "ADDRESS": "636 UPPER JAMES ST",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.8781724,
+    "LATITUDE": 43.23741623
+  },
+  {
+    "X": 577308.9939,
+    "Y": 4785126.358,
+    "OBJECTID": 339,
+    "NAME": "United Church (Copetown - Rockton)",
+    "DENOMINATION": "United",
+    "ADDRESS": "276 HWY 52 N",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.0481986,
+    "LATITUDE": 43.21496412
+  },
+  {
+    "X": 584202.6557,
+    "Y": 4790420.13,
+    "OBJECTID": 340,
+    "NAME": "Dundas Baptist Church (Governors)",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "201 GOVERNORS RD",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.96253092,
+    "LATITUDE": 43.26188766
+  },
+  {
+    "X": 583800.23,
+    "Y": 4789568.763,
+    "OBJECTID": 341,
+    "NAME": "Dundas Baptist Church (Hilltop)",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "11 HILLTOP PL",
+    "COMMUNITY": "DUNDAS",
+    "LONGITUDE": -79.96761797,
+    "LATITUDE": 43.25426747
+  },
+  {
+    "X": 591355.2633,
+    "Y": 4790123.168,
+    "OBJECTID": 342,
+    "NAME": "Eckankar The Ancient Science Of Travel",
+    "DENOMINATION": "Spiritualists",
+    "ADDRESS": "178 KING ST W",
+    "COMMUNITY": "HAMILTON",
+    "LONGITUDE": -79.87446823,
+    "LATITUDE": 43.25838099
+  },
+  {
+    "X": 582196.328,
+    "Y": 4783875.303,
+    "OBJECTID": 343,
+    "NAME": "Fellowship Christian Reformed Church",
+    "DENOMINATION": "Christian Reformed",
+    "ADDRESS": "107 BRAITHWAITE AVE",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -79.98822258,
+    "LATITUDE": 43.20318403
+  },
+  {
+    "X": 577954.7578,
+    "Y": 4805508.48,
+    "OBJECTID": 344,
+    "NAME": "Freelton Fellowship Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "12 LOUISA ST",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.03735758,
+    "LATITUDE": 43.39840481
+  },
+  {
+    "X": 577708.9296,
+    "Y": 4805795.258,
+    "OBJECTID": 345,
+    "NAME": "Freelton United Church",
+    "DENOMINATION": "United",
+    "ADDRESS": "155 FREELTON RD",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -80.04035208,
+    "LATITUDE": 43.40101224
+  },
+  {
+    "X": 589409.3612,
+    "Y": 4798904.737,
+    "OBJECTID": 346,
+    "NAME": "Grace Anglican Church (Waterdown)",
+    "DENOMINATION": "Anglican",
+    "ADDRESS": "1401 KING ST E",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.8970098,
+    "LATITUDE": 43.33767437
+  },
+  {
+    "X": 588318.8274,
+    "Y": 4798626.04,
+    "OBJECTID": 347,
+    "NAME": "Grindstone Valley Bible Church",
+    "DENOMINATION": "Other",
+    "ADDRESS": "215 PARKSIDE DR",
+    "COMMUNITY": "FLAMBOROUGH",
+    "LONGITUDE": -79.91050553,
+    "LATITUDE": 43.33529422
+  },
+  {
+    "X": 580568.9072,
+    "Y": 4783274.983,
+    "OBJECTID": 348,
+    "NAME": "Heritage Fellowship Baptist Church",
+    "DENOMINATION": "Baptist",
+    "ADDRESS": "557 GARNER RD W",
+    "COMMUNITY": "ANCASTER",
+    "LONGITUDE": -80.00833953,
+    "LATITUDE": 43.1979545
   }
 ]
-
