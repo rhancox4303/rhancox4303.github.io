@@ -1,17 +1,4 @@
-/**
-    Name:       Riley Hancox
-    Student ID: 000397119
-    Project:    Hamilton Places of Worship -Release
-    Course:     COMP 10133
-    Instructor: Kevin Browne
 
-    File:       JSON.js
-    File Date:  March-1-‎18
-    CSunix:     https://csunix.mohawkcollege.ca/~000397119/private/10133/release/JSON.js
-    
-I, Riley Hancox, 000397119 certify that this material is my original work. No other
-person's work has been used without due acknowledgement.
-**/
 
 /**
  * The array pow contains the places of worship JSON data
@@ -897,7 +884,7 @@ var pow = [
   {
     //Valid
     "ID": 96,
-    "NAME": "Kingdom Hall of Jehovah�s Witnesses",
+    "NAME": "Kingdom Hall of Jehovah’s Witnesses",
     "DENOMINATION": "Jehovah's Witnesses",
     "ADDRESS": "57 DELAWARE AVE",
     "COMMUNITY": "HAMILTON",
